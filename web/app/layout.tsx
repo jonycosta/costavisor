@@ -18,16 +18,17 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.costavisor.com"),
   title: {
-    default: "CostaVisor | Nerja & Frigiliana Local Experts",
+    default: "CostaVisor | Expertos Locales en Nerja, Frigiliana y Costa del Sol",
     template: "%s | CostaVisor"
   },
-  description: "Experiencias de lujo, villas privadas y servicios de concierge en Nerja, Frigiliana y la Costa del Sol. Gestión integral para propietarios y viajeros exigentes.",
+  description: "Tu aliado local en la Costa del Sol. Encuentra los mejores precios en villas, experiencias y servicios en Nerja, Frigiliana y Málaga. Lujo accesible y gestión integral.",
+  keywords: ["Nerja", "Frigiliana", "Costa del Sol", "Málaga", "Turismo", "Villas", "Alquiler Vacacional", "Experiencias", "Concierge", "Presupuestos"],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "CostaVisor | Nerja & Frigiliana Local Experts",
-    description: "Experiencias de lujo y servicios VIP en la Costa del Sol. Villas, barcos y concierge en Nerja y Frigiliana.",
+    title: "CostaVisor | Expertos en Nerja, Frigiliana y Málaga",
+    description: "Descubre la Costa del Sol como un local. Villas, barcos y planes exclusivos en Nerja y Frigiliana al mejor precio.",
     url: "https://www.costavisor.com",
     siteName: "CostaVisor",
     locale: "es_ES",
@@ -43,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CostaVisor | Luxury Services Costa del Sol",
-    description: "Villas, Yates y Concierge en Nerja & Frigiliana.",
+    title: "CostaVisor | Tu Aliado en la Costa del Sol",
+    description: "Villas, Yates y Planes Locales en Nerja & Frigiliana.",
     images: ["/exp-nature.png"],
   },
   robots: {
