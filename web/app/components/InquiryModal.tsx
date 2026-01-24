@@ -137,7 +137,7 @@ export default function InquiryModal({ isOpen, onClose, lang, selectedProperty, 
                                                 type="text"
                                                 value={formData.name}
                                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                                className="w-full pl-14 pr-6 py-5 bg-primary/5 border border-transparent focus:border-secondary focus:bg-white rounded-2xl outline-none transition-all font-medium"
+                                                className="w-full pl-14 pr-6 py-5 bg-primary/5 border border-transparent focus:border-secondary focus:bg-white rounded-2xl outline-none transition-all font-medium text-primary"
                                             />
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@ export default function InquiryModal({ isOpen, onClose, lang, selectedProperty, 
                                                 type="email"
                                                 value={formData.email}
                                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                                className="w-full pl-14 pr-6 py-5 bg-primary/5 border border-transparent focus:border-secondary focus:bg-white rounded-2xl outline-none transition-all font-medium"
+                                                className="w-full pl-14 pr-6 py-5 bg-primary/5 border border-transparent focus:border-secondary focus:bg-white rounded-2xl outline-none transition-all font-medium text-primary"
                                             />
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@ export default function InquiryModal({ isOpen, onClose, lang, selectedProperty, 
                                             value={formData.message}
                                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                             placeholder={selectedProperty ? `${lang === 'es' ? 'Hola, me gustaría más información sobre' : 'Hi, I would like more information about'} ${selectedProperty}` : ""}
-                                            className="w-full pl-14 pr-6 py-5 bg-primary/5 border border-transparent focus:border-secondary focus:bg-white rounded-2xl outline-none transition-all font-medium resize-none"
+                                            className="w-full pl-14 pr-6 py-5 bg-primary/5 border border-transparent focus:border-secondary focus:bg-white rounded-2xl outline-none transition-all font-medium resize-none text-primary"
                                         />
                                     </div>
                                 </div>
