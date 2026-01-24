@@ -181,9 +181,9 @@ export default function ExperienceClient({ slug }: { slug: string }) {
                         {exp.price !== "0" && exp.price !== "Consultar" ? (
                             <div className="space-y-6">
                                 <div>
-                                    <span className="text-muted text-[10px] font-black uppercase tracking-widest block mb-2">{lang === 'es' ? 'Precio Total' : 'Total Price'}</span>
+                                    <span className="text-gray-600 text-[10px] font-black uppercase tracking-widest block mb-2">{lang === 'es' ? 'Precio Total' : 'Total Price'}</span>
                                     <div className="flex items-baseline gap-2">
-                                        <span className="text-4xl font-outfit font-black text-primary">{exp.price}€</span>
+                                        <span className="text-4xl font-outfit font-black text-black">{exp.price}€</span>
                                     </div>
                                 </div>
 
@@ -193,19 +193,19 @@ export default function ExperienceClient({ slug }: { slug: string }) {
                                         <span className="text-secondary font-black text-lg">{deposit}€</span>
                                     </div>
                                     <div className="flex justify-between items-center text-sm border-t border-secondary/20 pt-4">
-                                        <span className="font-medium text-muted">{lang === 'es' ? 'Resto a la llegada' : 'Remaining on arrival'}</span>
-                                        <span className="font-bold text-primary">{remaining}€</span>
+                                        <span className="font-medium text-gray-600">{lang === 'es' ? 'Resto a la llegada' : 'Remaining on arrival'}</span>
+                                        <span className="font-bold text-black">{remaining}€</span>
                                     </div>
                                 </div>
-                                <p className="text-[10px] text-muted font-bold leading-relaxed italic">
+                                <p className="text-[10px] text-gray-500 font-bold leading-relaxed italic">
                                     {t.portfolio.depositNote}
                                 </p>
                             </div>
                         ) : (
                             <div>
-                                <span className="text-muted text-[10px] font-black uppercase tracking-widest block mb-2">{lang === 'es' ? 'Presupuesto' : 'Quote'}</span>
+                                <span className="text-gray-600 text-[10px] font-black uppercase tracking-widest block mb-2">{lang === 'es' ? 'Presupuesto' : 'Quote'}</span>
                                 <div className="flex items-baseline gap-2">
-                                    <span className="text-xl font-outfit font-black text-primary uppercase leading-tight">
+                                    <span className="text-xl font-outfit font-black text-black uppercase leading-tight">
                                         {lang === 'es' ? 'Consultar disponibilidad' : 'Check availability'}
                                     </span>
                                 </div>
