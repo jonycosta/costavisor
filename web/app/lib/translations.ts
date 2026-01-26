@@ -430,7 +430,7 @@ export const translations = {
                     },
                     {
                         title: "Excelencia Operativa",
-                        desc: "Una solución 360º gestionada por expertos locales, asegurando una alta retención y flujos de ingresos estables todo el año.",
+                        desc: "Gestión integral a cargo de expertos locales, orientada a construir relaciones duraderas con clientes y generar ingresos recurrentes.",
                     }
                 ]
             },
