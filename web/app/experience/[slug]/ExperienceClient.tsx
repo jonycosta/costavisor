@@ -69,7 +69,7 @@ export default function ExperienceClient({ slug }: { slug: string }) {
                             <div className="flex items-center gap-5">
                                 <div className="p-4 rounded-3xl bg-primary/5 text-primary shadow-sm"><Clock className="w-6 h-6" /></div>
                                 <div>
-                                    <span className="block text-[10px] text-muted font-black uppercase tracking-widest mb-1">{lang === 'es' ? 'Duración' : 'Duration'}</span>
+                                    <span className="block text-[10px] text-gray-600 font-black uppercase tracking-widest mb-1">{lang === 'es' ? 'Duración' : 'Duration'}</span>
                                     <span className="text-lg font-bold text-primary">{exp.duration}</span>
                                 </div>
                             </div>
@@ -77,14 +77,14 @@ export default function ExperienceClient({ slug }: { slug: string }) {
                         <div className="flex items-center gap-5">
                             <div className="p-4 rounded-3xl bg-primary/5 text-primary shadow-sm"><Users className="w-6 h-6" /></div>
                             <div>
-                                <span className="block text-[10px] text-muted font-black uppercase tracking-widest mb-1">{lang === 'es' ? 'Privacidad' : 'Privacy'}</span>
+                                <span className="block text-[10px] text-gray-600 font-black uppercase tracking-widest mb-1">{lang === 'es' ? 'Privacidad' : 'Privacy'}</span>
                                 <span className="text-lg font-bold text-primary">{lang === 'es' ? 'Hasta' : 'Up to'} {exp.maxPax} pers.</span>
                             </div>
                         </div>
                         <div className="flex items-center gap-5">
                             <div className="p-4 rounded-3xl bg-primary/5 text-primary shadow-sm"><Globe className="w-6 h-6" /></div>
                             <div>
-                                <span className="block text-[10px] text-muted font-black uppercase tracking-widest mb-1">{lang === 'es' ? 'Idiomas' : 'Languages'}</span>
+                                <span className="block text-[10px] text-gray-600 font-black uppercase tracking-widest mb-1">{lang === 'es' ? 'Idiomas' : 'Languages'}</span>
                                 <span className="text-lg font-bold text-primary">ES / EN</span>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ export default function ExperienceClient({ slug }: { slug: string }) {
                         <h3 className="font-outfit text-3xl font-black text-primary italic">
                             {lang === "es" ? "La Experiencia" : "The Experience"}
                         </h3>
-                        <p className="text-muted leading-relaxed text-xl font-medium whitespace-pre-line">
+                        <p className="text-black leading-relaxed text-xl font-medium whitespace-pre-line">
                             {exp.description}
                         </p>
                         {exp.partnerLogo && (
