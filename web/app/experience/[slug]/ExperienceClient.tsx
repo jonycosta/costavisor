@@ -13,6 +13,7 @@ import { useLanguage } from "../../lib/LanguageContext";
 export default function ExperienceClient({ slug }: { slug: string }) {
     const { lang, setLang } = useLanguage();
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [overrideIsBooking, setOverrideIsBooking] = useState<boolean | null>(null);
     const t = translations[lang];
 
     // Find the experience in the portfolio items
@@ -214,11 +215,24 @@ export default function ExperienceClient({ slug }: { slug: string }) {
 
                         <div className="space-y-6">
                             <button
-                                onClick={() => setIsModalOpen(true)}
+                                onClick={() => {
+                                    setOverrideIsBooking(true);
+                                    setIsModalOpen(true);
+                                }}
                                 className="w-full py-6 rounded-2xl bg-secondary hover:bg-secondary/90 text-white font-outfit font-black text-xl shadow-2xl shadow-secondary/30 transition-all active:scale-95 flex items-center justify-center gap-3"
                             >
-                                {lang === 'es' ? 'Reservar Ahora' : 'Book Now'}
+                                {t.portfolio.payNow}
                                 <Sparkles className="w-5 h-5 fill-white" />
+                            </button>
+
+                            <button
+                                onClick={() => {
+                                    setOverrideIsBooking(false);
+                                    setIsModalOpen(true);
+                                }}
+                                className="w-full py-5 rounded-2xl border-2 border-primary/20 hover:border-secondary hover:text-secondary text-primary font-outfit font-black text-lg transition-all active:scale-95 flex items-center justify-center gap-2"
+                            >
+                                {t.portfolio.inquireText}
                             </button>
                             <p className="text-center text-xs text-muted font-bold tracking-wide">
                                 {lang === 'es'
@@ -243,11 +257,14 @@ export default function ExperienceClient({ slug }: { slug: string }) {
 
             <InquiryModal
                 isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
+                onClose={() => {
+                    setIsModalOpen(false);
+                    setOverrideIsBooking(null);
+                }}
                 lang={lang}
                 selectedProperty={exp.title}
                 isLuxuryQuote={true}
-                isBooking={exp.price !== "0" && exp.price !== "Consultar"}
+                isBooking={overrideIsBooking !== null ? overrideIsBooking : (exp.price !== "0" && exp.price !== "Consultar")}
                 totalPrice={priceNum}
             />
         </main>

@@ -182,7 +182,7 @@ export default function InquiryModal({ isOpen, onClose, lang, selectedProperty, 
                                     disabled={status === "sending"}
                                     className="w-full py-5 bg-secondary hover:bg-secondary/90 disabled:bg-slate-400 text-white font-outfit font-black text-xl rounded-2xl transition-all shadow-2xl shadow-secondary/30 active:scale-95 flex items-center justify-center gap-3"
                                 >
-                                    {status === "sending" ? (lang === "es" ? "Enviando..." : "Sending...") : t.send}
+                                    {status === "sending" ? (lang === "es" ? "Enviando..." : "Sending...") : (isBooking ? t.payDeposit : t.send)}
                                     <Send className="w-6 h-6" />
                                 </button>
                             </form>

@@ -46,6 +46,8 @@ export const translations = {
             h2: "Reserve su Momento CostaVisor",
             p: "Selección de actividades privadas diseñadas para superar sus expectativas más altas.",
             depositNote: "Para reservar solo abonarás el 20% del precio; el resto lo abonas a la llegada.",
+            payNow: "Reservar Ahora (Pagar Fianza)",
+            inquireText: "Solicitar Información VIP",
             items: [
                 {
                     title: "Navegación Privada Acantilados",
@@ -367,6 +369,7 @@ export const translations = {
             message: "¿Cómo podemos hacer su estancia inolvidable?",
             property: "Interesado en:",
             send: "Enviar Solicitud VIP",
+            payDeposit: "Pagar fianza y reservar ahora",
             thanks: "¡Gracias por su confianza!",
             success: "Un gestor personal le contactará en menos de 24 horas."
         },
@@ -734,6 +737,8 @@ export const translations = {
             h2: "Book Your CostaVisor Moment",
             p: "Selection of private activities designed to exceed your highest expectations.",
             depositNote: "To book, you will only pay 20% of the price; the rest is paid on arrival.",
+            payNow: "Book Now (Pay Deposit)",
+            inquireText: "Request VIP Information",
             items: [
                 {
                     title: "Private Coastline Navigation",
@@ -1067,6 +1072,7 @@ export const translations = {
             message: "How can we make your stay unforgettable?",
             property: "Interested in:",
             send: "Submit VIP Request",
+            payDeposit: "Pay deposit and book now",
             thanks: "Thank you for your trust!",
             success: "A personal manager will contact you within 24 hours."
         },
