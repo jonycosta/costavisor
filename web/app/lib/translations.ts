@@ -15,7 +15,8 @@ export const translations = {
             h1: "Vive la Costa del Sol como un Local, sin pagar de más",
             p: "Rastreamos los mejores alojamientos, experiencias y presupuestos en Nerja y Frigiliana. Disfruta del paraíso con la tranquilidad de quien conoce la zona, evitando trampas para turistas.",
             cta: "Descubrir Experiencias",
-            cta2: "Nuestros Servicios"
+            cta2: "Nuestros Servicios",
+            localPrideShort: "Proyecto 100% Local: Nacidos en Nerja, apoyando al comercio de nuestra zona."
         },
         services: {
             tag: "Servicios de Concierge",
@@ -707,7 +708,8 @@ export const translations = {
             h1: "Live the Costa del Sol Like a Local, Not a Tourist",
             p: "We track the best villas, experiences, and maintenance quotes in Nerja and Frigiliana. Enjoy paradise with the peace of mind of an insider, avoiding tourist traps and overpricing.",
             cta: "Explore Experiences",
-            cta2: "Our Services"
+            cta2: "Our Services",
+            localPrideShort: "100% Local Project: Born in Nerja, supporting the commerce of our area."
         },
         services: {
             tag: "Concierge Services",
