@@ -426,7 +426,7 @@ export const translations = {
                     },
                     {
                         title: "Gestión de Riesgos",
-                        desc: "Auditorías financieras automatizadas y una selección rigurosa de proveedores garantizan un ecosistema seguro para inversores y clientes.",
+                        desc: "Trabajamos solo con proveedores de confianza y mantenemos un control riguroso de la calidad para garantizar tranquilidad a inversores y clientes.",
                     },
                     {
                         title: "Excelencia Operativa",
