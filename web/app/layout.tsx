@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/exp-nature.png",
+        url: "https://www.costavisor.com/exp-nature.png",
         width: 1200,
         height: 630,
         alt: "CostaVisor Experience",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CostaVisor | Tu Aliado en la Costa del Sol",
     description: "Villas, Yates y Planes Locales en Nerja & Frigiliana.",
-    images: ["/exp-nature.png"],
+    images: ["https://www.costavisor.com/exp-nature.png"],
   },
   robots: {
     index: true,
