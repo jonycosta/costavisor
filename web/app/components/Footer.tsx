@@ -23,6 +23,11 @@ export default function Footer({ t }: { t: any }) {
                         <p className="text-white/60 text-xl leading-relaxed max-w-md font-medium">
                             {t.about}
                         </p>
+                        <div className="pt-4 border-l-2 border-secondary/30 pl-6">
+                            <p className="text-white/40 text-sm italic leading-relaxed max-w-sm">
+                                {t.localPride}
+                            </p>
+                        </div>
                         <div className="flex gap-4">
                             <a
                                 href="https://www.facebook.com/nerjaexperience"
