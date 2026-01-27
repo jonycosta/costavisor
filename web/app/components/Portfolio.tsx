@@ -34,7 +34,7 @@ export default function Portfolio({ t }: { t: any }) {
                         >
                             <Image
                                 src={project.image}
-                                alt={project.title}
+                                alt={`${project.title} - Experiencia en Nerja y Frigiliana`}
                                 fill
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
                             />

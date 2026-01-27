@@ -9,7 +9,7 @@ export default function Hero({ t }: { t: any }) {
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/exp-nature.png"
-                    alt="Costa del Sol Landscape"
+                    alt="Villas de lujo y experiencias exclusivas en Nerja y Frigiliana - Costa del Sol"
                     fill
                     className="object-cover opacity-60"
                     priority

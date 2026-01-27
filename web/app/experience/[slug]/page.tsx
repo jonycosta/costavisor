@@ -28,19 +28,59 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: `${exp.title} | CostaVisor Exclusive`,
             description: exp.description.substring(0, 160),
-            images: [{ url: exp.image }],
+            images: [{ url: `https://www.costavisor.com${exp.image}` }],
             type: "website",
         },
         twitter: {
             card: "summary_large_image",
             title: exp.title,
             description: exp.description.substring(0, 160),
-            images: [exp.image],
+            images: [`https://www.costavisor.com${exp.image}`],
         }
     };
 }
 
 export default async function ExperienceDetailPage({ params }: Props) {
     const { slug } = await params;
-    return <ExperienceClient slug={slug} />;
+
+    const expEs = translations.es.portfolio.items.find((item: any) => item.slug === slug);
+    const expEn = translations.en.portfolio.items.find((item: any) => item.slug === slug);
+    const exp = expEs || expEn;
+
+    return (
+        <>
+            {exp && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Inicio",
+                                    "item": "https://www.costavisor.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Experiencias",
+                                    "item": "https://www.costavisor.com/#experiencias"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 3,
+                                    "name": exp.title,
+                                    "item": `https://www.costavisor.com/experience/${slug}`
+                                }
+                            ]
+                        })
+                    }}
+                />
+            )}
+            <ExperienceClient slug={slug} />
+        </>
+    );
 }

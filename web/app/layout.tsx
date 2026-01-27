@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description: "Tu aliado local en la Costa del Sol. Encuentra los mejores precios en villas, experiencias y servicios en Nerja, Frigiliana y Málaga. Lujo accesible y gestión integral.",
   keywords: ["Nerja", "Frigiliana", "Costa del Sol", "Málaga", "Turismo", "Villas", "Alquiler Vacacional", "Experiencias", "Concierge", "Presupuestos"],
   alternates: {
-    canonical: "/",
+    canonical: "https://www.costavisor.com",
   },
   openGraph: {
     title: "CostaVisor | Expertos en Nerja, Frigiliana y Málaga",
