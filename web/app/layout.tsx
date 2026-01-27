@@ -72,27 +72,40 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "CostaVisor",
-              "description": "Vacaciones personalizadas y servicios locales en Nerja y Frigiliana. Alojamientos, experiencias en barco y mantenimiento.",
-              "url": "https://www.costavisor.com",
-              "telephone": "+34683459342",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Nerja",
-                "addressRegion": "Málaga",
-                "addressCountry": "ES"
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "CostaVisor",
+                "url": "https://www.costavisor.com",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://www.costavisor.com/?s={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
               },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "36.7441",
-                "longitude": "-3.8767"
-              },
-              "openingHours": "Mo-Su 00:00-23:59",
-              "image": "https://www.costavisor.com/exp-nature.png"
-            })
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "CostaVisor",
+                "description": "Vacaciones personalizadas y servicios locales en Nerja y Frigiliana. Alojamientos, experiencias en barco y mantenimiento.",
+                "url": "https://www.costavisor.com",
+                "telephone": "+34683459342",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Nerja",
+                  "addressRegion": "Málaga",
+                  "addressCountry": "ES"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "36.7441",
+                  "longitude": "-3.8767"
+                },
+                "openingHours": "Mo-Su 00:00-23:59",
+                "image": "https://www.costavisor.com/exp-nature.png"
+              }
+            ])
           }}
         />
       </head>
