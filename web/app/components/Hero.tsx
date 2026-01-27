@@ -22,29 +22,24 @@ export default function Hero({ t }: { t: any }) {
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="max-w-3xl space-y-8">
-                    {/* Local Pride Top Banner */}
-                    <div className="inline-flex animate-in fade-in slide-in-from-top-4 duration-1000">
-                        <div className="bg-secondary/30 backdrop-blur-xl border border-secondary/40 px-6 py-2 rounded-full flex items-center gap-3">
-                            <span className="flex h-2 w-2 relative">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
-                            </span>
-                            <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-white">
-                                {t.localPrideShort}
-                            </span>
-                        </div>
-                    </div>
-
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 animate-in fade-in slide-in-from-bottom-4 duration-700">
                         <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
                         <span className="text-xs font-bold tracking-widest text-white uppercase">{t.tag}</span>
                     </div>
 
-                    {/* Headline */}
-                    <h1 className="font-outfit text-5xl md:text-8xl font-black text-white leading-[1.1] animate-in fade-in slide-in-from-bottom-6 duration-1000">
-                        {t.h1}
-                    </h1>
+                    {/* Headline + Local Pride */}
+                    <div className="animate-in fade-in slide-in-from-bottom-6 duration-1000">
+                        <h1 className="font-outfit text-5xl md:text-8xl font-black text-white leading-[1.1]">
+                            {t.h1}
+                            <span className="block md:inline-block md:ml-8 mt-4 md:mt-0 align-middle">
+                                <span className="flex items-center gap-3 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white border-l border-white/30 pl-4 py-1">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
+                                    {t.localPrideShort}
+                                </span>
+                            </span>
+                        </h1>
+                    </div>
 
                     {/* Description */}
                     <p className="text-xl md:text-2xl text-white/80 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
