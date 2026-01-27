@@ -25,6 +25,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tienda/Jet-Ski-Experiencie-p785261064',
+        destination: '/#experiencias', // We don't have a specific Jet Ski page yet
+        permanent: true,
+      },
+      {
+        source: '/tienda/Airport-Transfer-p785261065',
+        destination: '/#servicios-locales',
+        permanent: true,
+      },
+      {
         source: '/tienda/account',
         destination: '/',
         permanent: true,
