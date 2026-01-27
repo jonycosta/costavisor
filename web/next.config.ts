@@ -35,6 +35,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tienda/Cocktail-Experiencie-p786116592',
+        destination: '/experience/cocktail-experience',
+        permanent: true,
+      },
+      {
         source: '/tienda/account',
         destination: '/',
         permanent: true,
