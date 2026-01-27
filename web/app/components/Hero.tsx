@@ -20,21 +20,21 @@ export default function Hero({ t }: { t: any }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-transparent to-transparent" />
             </div>
 
-            {/* Local Pride Top Banner */}
-            <div className="absolute top-32 left-0 right-0 z-20 flex justify-center px-6 pointer-events-none">
-                <div className="bg-secondary/20 backdrop-blur-xl border border-secondary/30 px-6 py-2 rounded-full flex items-center gap-3 animate-in fade-in slide-in-from-top-4 duration-1000">
-                    <span className="flex h-2 w-2 relative">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
-                    </span>
-                    <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-secondary-light">
-                        {t.localPrideShort}
-                    </span>
-                </div>
-            </div>
-
             <div className="container mx-auto px-6 relative z-10">
                 <div className="max-w-3xl space-y-8">
+                    {/* Local Pride Top Banner */}
+                    <div className="inline-flex animate-in fade-in slide-in-from-top-4 duration-1000">
+                        <div className="bg-secondary/30 backdrop-blur-xl border border-secondary/40 px-6 py-2 rounded-full flex items-center gap-3">
+                            <span className="flex h-2 w-2 relative">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                            </span>
+                            <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-white">
+                                {t.localPrideShort}
+                            </span>
+                        </div>
+                    </div>
+
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 animate-in fade-in slide-in-from-bottom-4 duration-700">
                         <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
