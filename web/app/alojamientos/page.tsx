@@ -98,36 +98,70 @@ export default function Alojamientos() {
                         {filteredItems.map((item: any) => {
                             const Icon = icons[item.type] || Building2;
                             return (
-                                <div key={item.id} className="group flex flex-col bg-white rounded-[3rem] overflow-hidden border border-border/50 hover:shadow-xl transition-all duration-500">
-                                    {/* Placeholder Content */}
-                                    <div className="relative aspect-[16/10] bg-primary/5 flex flex-col items-center justify-center gap-6 p-8">
+                                <div key={item.id} className="group flex flex-col bg-white rounded-[3rem] overflow-hidden border border-border/50 hover:shadow-2xl transition-all duration-700">
+                                    {/* Image Section */}
+                                    <div className="relative aspect-[16/10] overflow-hidden">
+                                        <Image
+                                            src={item.image}
+                                            alt={item.title}
+                                            fill
+                                            className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
-                                        <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg border border-primary/5 group-hover:scale-110 transition-transform duration-500">
-                                            <Icon className="w-8 h-8 text-secondary" />
-                                        </div>
-
-                                        <div className="text-center space-y-2">
-                                            <span className="px-4 py-1.5 rounded-full bg-white border border-primary/10 text-primary/60 text-[10px] font-black uppercase tracking-widest">
+                                        {/* Category Badge */}
+                                        <div className="absolute top-6 left-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-white">
+                                            <Icon className="w-3 h-3" />
+                                            <span className="text-[10px] font-black uppercase tracking-widest">
                                                 {(ta.filters as any)[item.type]}
                                             </span>
-                                            <h3 className="font-outfit text-2xl font-black text-primary opacity-40">
-                                                {item.title}
-                                            </h3>
                                         </div>
 
-                                        <div className="absolute inset-0 flex items-center justify-center bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm">
-                                            <span className="text-white font-outfit font-black text-2xl uppercase tracking-widest border-2 border-white px-8 py-3 rounded-xl">
-                                                {lang === 'es' ? 'Próximamente' : 'Coming Soon'}
-                                            </span>
+                                        {/* Location Badge */}
+                                        <div className="absolute top-6 right-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 backdrop-blur-xl border border-white/10 text-white">
+                                            <MapPin className="w-3 h-3" />
+                                            <span className="text-[10px] font-black uppercase tracking-widest">{item.loc}</span>
                                         </div>
                                     </div>
 
-                                    {/* Minimal Footer */}
-                                    <div className="px-10 py-6 bg-white border-t border-border/30 flex justify-between items-center">
-                                        <span className="text-muted text-xs font-bold uppercase tracking-wider">
-                                            {lang === 'es' ? 'Disponible en breve' : 'Available soon'}
-                                        </span>
-                                        <Sparkles className="w-4 h-4 text-secondary/50" />
+                                    {/* Content Section */}
+                                    <div className="p-10 flex flex-col flex-1">
+                                        <div className="flex justify-between items-start mb-6">
+                                            <div>
+                                                <h3 className="font-outfit text-3xl font-black text-primary group-hover:text-secondary transition-colors duration-500 mb-2">
+                                                    {item.title}
+                                                </h3>
+                                                <p className="text-muted text-sm font-medium">
+                                                    {item.loc} — Nerja & Frigiliana Experts
+                                                </p>
+                                            </div>
+                                            <div className="text-right">
+                                                <p className="text-secondary font-black text-xl mb-1">{item.price}</p>
+                                                <p className="text-[10px] text-muted font-bold uppercase tracking-widest">PVP Directo Local</p>
+                                            </div>
+                                        </div>
+
+                                        <p className="text-muted/80 text-sm leading-relaxed mb-8 flex-1">
+                                            {lang === 'es'
+                                                ? 'Una propiedad exclusiva seleccionada por CostaVisor por su excelencia en diseño y ubicación privilegiada en la Costa del Sol.'
+                                                : 'An exclusive property selected by CostaVisor for its excellence in design and privileged location on the Costa del Sol.'}
+                                        </p>
+
+                                        <div className="flex items-center gap-4">
+                                            <button
+                                                onClick={() => openModal(item.title, false)}
+                                                className="flex-1 px-8 py-4 rounded-2xl bg-primary text-white font-black uppercase tracking-widest text-xs hover:bg-primary/90 transition-all active:scale-95 shadow-lg shadow-primary/10"
+                                            >
+                                                {lang === 'es' ? 'Consultar Info' : 'Request Info'}
+                                            </button>
+                                            <button
+                                                onClick={() => openModal(item.title, true)}
+                                                className="px-8 py-4 rounded-2xl border-2 border-primary/10 text-primary font-black uppercase tracking-widest text-xs hover:bg-primary hover:text-white transition-all active:scale-95 flex items-center gap-2"
+                                            >
+                                                {lang === 'es' ? 'Pre-Reserva' : 'Pre-Book'}
+                                                <ArrowRight className="w-4 h-4" />
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             );

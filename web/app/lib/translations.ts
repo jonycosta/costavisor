@@ -348,15 +348,15 @@ export const translations = {
                 hostel: "Suites Design"
             },
             items: [
-                { id: 1, type: "villa", title: "Villa Mariposa Real", loc: "Nerja", price: "Desde 450€/noche", image: "/exp-villa.png" },
-                { id: 2, type: "apartment", title: "Penthouse Brisa Marina", loc: "Playa Burriana", price: "Desde 200€/noche", image: "/exp-apt.png" },
-                { id: 3, type: "countryside", title: "Finca El Olivo Dorado", loc: "Frigiliana", price: "Desde 320€/noche", image: "/exp-nature.png" },
-                { id: 4, type: "hotel", title: "Hotel Balcón Boutique", loc: "Nerja Centro", price: "Desde 280€/noche", image: "/exp-hotel.png" }
+                { id: 1, type: "villa", title: "Villa Panorama Real", loc: "Punta Lara, Nerja", price: "Desde 450€/noche", image: "/exp-villa.png" },
+                { id: 2, type: "apartment", title: "Penthouse Blue Horizon", loc: "Playa Burriana", price: "Desde 200€/noche", image: "/exp-apt.png" },
+                { id: 3, type: "countryside", title: "Cortijo Los Olivos", loc: "Camino de Frigiliana", price: "Desde 320€/noche", image: "/exp-nature.png" },
+                { id: 4, type: "hotel", title: "Suites Boutique Centro", loc: "Nerja Casco Antiguo", price: "Desde 280€/noche", image: "/exp-villa.png" }
             ],
             cta: {
                 checkAvailability: "Consultar Disponibilidad",
                 exceptionalTitle: "¿Busca algo realmente excepcional?",
-                exceptionalDesc: "Nuestro equipo de concierge diseña vacaciones a medida para los gustos más exigentes. Desde transporte privado hasta chefs de estrella Michelin.",
+                exceptionalDesc: "Nuestro equipo de concierge diseña vacaciones a medida para los gustos más exigentes. Desde transporte privado hasta chefs privados exclusivos.",
                 exceptionalBtn: "Solicitar Presupuesto de Lujo"
             }
         },
@@ -1053,15 +1053,15 @@ export const translations = {
                 hostel: "Design Suites"
             },
             items: [
-                { id: 1, type: "villa", title: "Royal Mariposa Villa", loc: "Nerja", price: "From 450€/night", image: "/exp-villa.png" },
-                { id: 2, type: "apartment", title: "Sea Breeze Penthouse", loc: "Burriana Beach", price: "From 200€/night", image: "/exp-apt.png" },
-                { id: 3, type: "countryside", title: "Golden Olive Estate", loc: "Frigiliana", price: "From 320€/night", image: "/exp-nature.png" },
-                { id: 4, type: "hotel", title: "Balcón Boutique Hotel", loc: "Nerja Center", price: "From 280€/night", image: "/exp-hotel.png" }
+                { id: 1, type: "villa", title: "Royal Panorama Villa", loc: "Punta Lara, Nerja", price: "From 450€/night", image: "/exp-villa.png" },
+                { id: 2, type: "apartment", title: "Blue Horizon Penthouse", loc: "Burriana Beach", price: "From 200€/night", image: "/exp-apt.png" },
+                { id: 3, type: "countryside", title: "Olive Grove Estate", loc: "Frigiliana Road", price: "From 320€/night", image: "/exp-nature.png" },
+                { id: 4, type: "hotel", title: "Old Town Boutique Suites", loc: "Nerja Historic Center", price: "From 280€/night", image: "/exp-villa.png" }
             ],
             cta: {
                 checkAvailability: "Check Availability",
                 exceptionalTitle: "Looking for something truly exceptional?",
-                exceptionalDesc: "Our concierge team designs bespoke vacations for the most discerning tastes. From private transport to Michelin-starred chefs.",
+                exceptionalDesc: "Our concierge team designs bespoke vacations for the most discerning tastes. From private transport to exclusive private chefs.",
                 exceptionalBtn: "Request Luxury Quote"
             }
         },
