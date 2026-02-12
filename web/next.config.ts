@@ -44,6 +44,11 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/mantenimiento',
+        destination: '/investors',
+        permanent: true,
+      },
       // Generic redirect for anything else in /tienda/
       {
         source: '/tienda/:slug*',

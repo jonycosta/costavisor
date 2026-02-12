@@ -6,14 +6,13 @@ export const translations = {
             experiences: "Experiencias",
             packages: "Packs de Vacaciones",
             services: "Concierge",
-            maintenance: "Presupuestos",
             investors: "Inversores",
-            book: "Consulta VIP"
+            book: "Diseñar mi Viaje"
         },
         hero: {
             tag: "Nerja & Frigiliana | Luxury Services",
-            h1: "Vive la Costa del Sol como un Local, sin pagar de más",
-            p: "Rastreamos los mejores alojamientos, experiencias y presupuestos en Nerja y Frigiliana. Disfruta del paraíso con la tranquilidad de quien conoce la zona, evitando trampas para turistas.",
+            h1: "El Secreto Mejor Guardado de la Costa del Sol",
+            p: "Accede a villas privadas, experiencias en barco y rincones de Nerja y Frigiliana que no salen en las guías. Somos tu anfitrión local para un viaje diferente, exclusivo y sin complicaciones.",
             cta: "Descubrir Experiencias",
             cta2: "Nuestros Servicios",
             localPrideShort: "Proyecto 100% Local: Nacidos en Nerja, apoyando al comercio de nuestra zona."
@@ -24,21 +23,19 @@ export const translations = {
             p: "Nos encargamos de cada detalle para que su única ocupación sea disfrutar del paraíso.",
             items: [
                 {
-                    title: "Villas & Suites de Lujo",
-                    desc: "Selección curada de las propiedades más exclusivas de Nerja y Frigiliana.",
+                    title: "Villas & Suites con Encanto",
+                    desc: "Selección curada de las propiedades más singulares. Lejos del ruido, cerca de la esencia.",
                     features: ["Staff Privado", "Ubicaciones Prime", "Privacidad Total"]
                 },
                 {
-                    title: "Reformas & Presupuestos",
-                    desc: "Pincha aquí si buscas un presupuesto de reforma para tu casa. Rastreamos la mejor relación calidad-precio por ti en toda la Costa del Sol.",
-                    features: ["Gestión Directa", "Proveedores Locales", "Ahorro Garantizado"],
-                    link: "/mantenimiento",
-                    btnText: "Obtener Presupuesto"
+                    title: "Experiencias de Autor",
+                    desc: "Desde navegar en zonas vírgenes hasta chefs privados en tu villa. Diseñamos momentos que recordarás siempre.",
+                    features: ["Acceso Exclusivo", "Guías Locales", "Totalmente a Medida"]
                 },
                 {
-                    title: "Property Management",
-                    desc: "Gestión de confianza para propietarios que buscan tranquilidad y rentabilidad.",
-                    features: ["Mantenimiento VIP", "Gestión 360º", "Informes en Tiempo Real"]
+                    title: "Concierge 24/7",
+                    desc: "Tu asistente personal en destino. Reservas VIP, transporte y cualquier capricho que necesites.",
+                    features: ["Atención Bilingüe", "Respuesta Rápida", "Conocimiento Local"]
                 }
             ]
         },
@@ -509,49 +506,7 @@ export const translations = {
                 `
             }
         },
-        maintenance: {
-            tag: "¿Buscas un presupuesto para tu hogar?",
-            h2: "Pincha aquí si buscas un presupuesto de reforma para tu casa",
-            p: "No pierdas tiempo comparando solo. Nosotros rastreamos Nerja, Frigiliana y la Costa del Sol para conseguirte la mejor relación calidad-precio en presupuestos para tu hogar. Hablamos español e inglés nativo para una gestión cercana. Porque no hay nada más gratificante que invertir en la comodidad de tu propio hogar; vive en un espacio diseñado exactamente a tu gusto, donde cada detalle refleja tu estilo y bienestar.",
-            ctaMain: "Solicitar Comparativa de Presupuestos",
-            ctaWhatsapp: "Contactar: +34 643 216 427",
-            phone: "+34 643 216 427",
-            sections: {
-                individuals: {
-                    title: "Para Particulares",
-                    desc: "Cuidamos de su hogar como si fuera nuestro. Máxima discreción y acabados impecables.",
-                    items: [
-                        { title: "Limpieza y Puesta a Punto", desc: "Servicio de limpieza profunda y preparación para estancias." },
-                        { title: "Reparaciones y Averías", desc: "Fontanería, electricidad y reparaciones del hogar 24/7." },
-                        { title: "Jardinería y Piscinas", desc: "Mantenimiento integral de exteriores para un estado impecable." },
-                        { title: "Reformas de Lujo", desc: "Desde actualizaciones estéticas hasta reformas integrales." }
-                    ]
-                },
-                realEstate: {
-                    title: "Para Inmobiliarias",
-                    desc: "Su brazo técnico en la Costa del Sol. Respaldamos su gestión con rapidez y profesionalidad.",
-                    items: [
-                        { title: "Reparaciones Express", desc: "Soluciones rápidas para no perder ninguna venta o alquiler." },
-                        { title: "Gestión de Llaves", desc: "Custodia y entrega de llaves con total seguridad." },
-                        { title: "Informes Técnicos", desc: "Evaluación del estado de propiedades con reportes detallados." },
-                        { title: "Mantenimiento Preventivo", desc: "Planes anuales para conservar el valor de su cartera." }
-                    ]
-                }
-            },
-            features: [
-                { title: "Bilingüismo Total", desc: "Comunicación fluida en español e inglés para su tranquilidad." },
-                { title: "Socios Locales", desc: "Trabajamos con las empresas más fiables de Nerja y Frigiliana." },
-                { title: "Garantía de Calidad", desc: "Solo servicios y materiales de confianza totalmente validados." }
-            ],
-            bottomCTA: {
-                h2: "Solicita tu presupuesto sin compromiso. Si buscas una reforma integral o mantenimiento periódico para tu alquiler vacacional, diseñamos un plan a tu medida.",
-                cta: "Solicitar Información"
-            },
-            note: {
-                title: "Nota Informativa",
-                text: "Con nuestra ayuda el proceso de reforma o gestión es mucho más cómodo. Olvida la burocracia lenta y frustrante de España; nosotros actuamos como tu aliado local para que todo fluya sin complicaciones."
-            }
-        },
+
         vacationPackages: {
             tag: "Packs de Vacaciones",
             h2: "Packs de Vacaciones Personalizados",
@@ -681,8 +636,8 @@ export const translations = {
                 },
                 {
                     icon: "🛠️",
-                    title: "Servicios Locales de Confianza",
-                    desc: "Solo trabajamos con proveedores que conocemos personalmente. Mantenimiento, reformas y ayuda 24/7 con manos expertas."
+                    title: "Soporte Local Premium",
+                    desc: "Desde reservas de último minuto hasta soluciones rápidas durante tu estancia. Estamos aquí para lo que surja."
                 },
                 {
                     icon: "💼",
@@ -690,6 +645,134 @@ export const translations = {
                     desc: "Análisis honesto del mercado. Buscamos propiedades con potencial real de rentabilidad, sin 'maquillaje' comercial."
                 }
             ]
+        },
+        vacationDesigner: {
+            step1: {
+                title: "¿Qué estílo de viaje buscas?",
+                subtitle: "Elige la vibra que mejor encaja contigo",
+                options: {
+                    relax: "Relax & Desconexión",
+                    adventure: "Aventura & Naturaleza",
+                    culture: "Cultura & Gastronomía",
+                    party: "Fiesta & Eventos"
+                }
+            },
+            step2: {
+                title: "¿Quién te acompaña?",
+                subtitle: "Para ajustar el alojamiento y las actividades",
+                options: {
+                    couple: "En Pareja",
+                    family: "Familia con Niños",
+                    friends: "Grupo de Amigos",
+                    solo: "Viajero Solo"
+                }
+            },
+            step3: {
+                title: "¿Cuántos días?",
+                subtitle: "Duración aproximada de tu estancia",
+                days: "días"
+            },
+            step4: {
+                title: "¿Cuál es tu presupuesto ideal?",
+                subtitle: "Nivel de exclusividad y servicios",
+                options: {
+                    smart: {
+                        label: "Smart Local",
+                        desc: "Lo mejor de la zona a precio local. Calidad sin lujos innecesarios."
+                    },
+                    premium: {
+                        label: "Premium Comfort",
+                        desc: "Villas con encanto, experiencias privadas y más comodidad."
+                    },
+                    luxury: {
+                        label: "Lujo Total",
+                        desc: "Sin límites. Yates, chefs privados y las mejores villas de la costa."
+                    }
+                }
+            },
+            result: {
+                title: "Tu Viaje Ideal Estimado",
+                subtitle: "Basado en tus preferencias",
+                priceRange: "Rango de Precio Estimado",
+                perPerson: "por persona",
+                disclaimer: {
+                    title: "Nota Importante sobre el Precio",
+                    text: "Este presupuesto es una estimación orientativa basada en precios medios de temporada. Los costes de alojamiento en la Costa del Sol varían dinámica según la fecha exacta y la disponibilidad. Para un precio cerrado y garantizado, contáctanos."
+                },
+                cta: "Solicitar Disponibilidad Real",
+                whatsappMessage: "Hola CostaVisor, he diseñado mi viaje: {style}, {company}, {days} días, Nivel {budget}. Presupuesto est: {price}. ¿Podemos ver opciones reales?"
+            }
+        },
+        investors: {
+            nav: { investor: "Inversores (y tranquilidad)", home: "Inicio" },
+            hero: {
+                tag: "Inversión Sin Dolores de Cabeza",
+                h1: "Invertir en Nerja debería ser <span class='text-secondary italic'>fácil y rentable</span>",
+                p: "Olvídate de las agencias que solo quieren venderte la casa y desaparecer. Nosotros somos tu socio local: te ayudamos a comprar, reformamos lo que haga falta y gestionamos el alquiler. Todo en uno.",
+                cta: "Hablemos de Números"
+            },
+            whyUs: {
+                title: "¿Por qué confiar en CostaVisor?",
+                desc: "Porque vivimos aquí, conocemos cada calle y tenemos las herramientas para cuidar tu inversión como si fuera nuestra.",
+                items: [
+                    {
+                        title: "Compramos Bien (Con Datos)",
+                        desc: "No nos dejamos llevar por 'corazonadas'. Analizamos qué propiedades tienen potencial real de alquiler turístico para que tu dinero rinda desde el día uno."
+                    },
+                    {
+                        title: "Reformas Sin Sorpresas",
+                        desc: "Con nuestra constructora (JD Builders), transformamos propiedades viejas en joyas turísticas. Precio cerrado y fecha garantizada. Sin líos."
+                    },
+                    {
+                        title: "Gestión Total (De verdad)",
+                        desc: "Limpieza, check-in, mantenimiento... Tú no tienes que levantar un dedo. Solo recibes los informes y los ingresos cada mes."
+                    },
+                    {
+                        title: "Tu Socio Local",
+                        desc: "Si hay una fuga de agua o un papel que firmar, ahí estamos nosotros. Eres dueño de una casa en la playa, no de un problema."
+                    }
+                ],
+                footer: "Más que una inmobiliaria, somos tu equipo sobre el terreno en Nerja."
+            },
+            pillars: {
+                title: "Nuestro Método: Tranquilidad Total",
+                items: [
+                    {
+                        title: "1. Encontramos",
+                        desc: "Buscamos esa 'joya oculta' con potencial que otros no ven.",
+                    },
+                    {
+                        title: "2. Transformamos",
+                        desc: "La convertimos en un alojamiento 5 estrellas (si hace falta).",
+                    },
+                    {
+                        title: "3. Rentabilizamos",
+                        desc: "La llenamos de huéspedes felices que pagan tarifas premium.",
+                    }
+                ]
+            },
+            market: {
+                tag: "El Momento es Ahora",
+                h2: "Nerja está de moda, pero hay que saber moverse",
+                p: "El turismo en la Costa del Sol no para de crecer. Pero para ganar dinero de verdad, necesitas destacar. Nosotros hacemos que tu propiedad sea la que todos quieren reservar.",
+                items: [
+                    "Trato directo y cercano (somos personas, no robots).",
+                    "Cuidamos tu casa mejor que la nuestra.",
+                    "Cuentas claras: transparencia total en gastos e ingresos.",
+                    "Experiencia real: ya gestionamos con éxito propiedades en la zona."
+                ],
+                stat: "Top",
+                statDesc: "Destino Turístico"
+            },
+            form: {
+                h2: "¿Te interesa invertir sin líos?",
+                p: "Déjanos tus datos. Sin compromiso. Nos tomamos un café (o una videollamada) y vemos cómo podemos ayudarte a ganar dinero en Nerja.",
+                name: "Tu Nombre",
+                email: "Tu Correo",
+                profile: "¿Qué buscas? (Ej: Comprar, Reformar, Gestionar...)",
+                profilePlaceholder: "Busco comprar para alquilar...",
+                cta: "Contactar con el Equipo"
+            }
         }
     },
     en: {
@@ -699,14 +782,70 @@ export const translations = {
             experiences: "Experiences",
             packages: "Vacation Packages",
             services: "Concierge",
-            maintenance: "Quotes",
             investors: "Investors",
-            book: "VIP Inquiry"
+            book: "Design My Trip"
+        },
+        vacationDesigner: {
+            step1: {
+                title: "What is your travel style?",
+                subtitle: "Choose the vibe that fits you best",
+                options: {
+                    relax: "Relax & Disconnect",
+                    adventure: "Adventure & Nature",
+                    culture: "Culture & Gastronomy",
+                    party: "Party & Events"
+                }
+            },
+            step2: {
+                title: "Who are you traveling with?",
+                subtitle: "To adjust accommodation and activities",
+                options: {
+                    couple: "Couple",
+                    family: "Family with Kids",
+                    friends: "Group of Friends",
+                    solo: "Solo Traveler"
+                }
+            },
+            step3: {
+                title: "How many days?",
+                subtitle: "Approximate duration of your stay",
+                days: "days"
+            },
+            step4: {
+                title: "What is your ideal budget?",
+                subtitle: "Level of exclusivity and services",
+                options: {
+                    smart: {
+                        label: "Smart Local",
+                        desc: "The best of the area at local prices. Quality without unnecessary luxury."
+                    },
+                    premium: {
+                        label: "Premium Comfort",
+                        desc: "Charming villas, private experiences, and extra comfort."
+                    },
+                    luxury: {
+                        label: "Total Luxury",
+                        desc: "No limits. Yachts, private chefs, and the best villas on the coast."
+                    }
+                }
+            },
+            result: {
+                title: "Your Estimated Ideal Trip",
+                subtitle: "Based on your preferences",
+                priceRange: "Estimated Price Range",
+                perPerson: "per person",
+                disclaimer: {
+                    title: "Important Price Note",
+                    text: "This budget is an indicative estimate based on average seasonal prices. Accommodation costs on the Costa del Sol vary dynamically depending on exact dates and availability. Contact us for a guaranteed final price."
+                },
+                cta: "Request Real Availability",
+                whatsappMessage: "Hi CostaVisor, I designed my trip: {style}, {company}, {days} days, {budget} Level. Est budget: {price}. Can we check real options?"
+            }
         },
         hero: {
             tag: "Nerja & Frigiliana | Luxury Services",
-            h1: "Live the Costa del Sol Like a Local, Not a Tourist",
-            p: "We track the best villas, experiences, and maintenance quotes in Nerja and Frigiliana. Enjoy paradise with the peace of mind of an insider, avoiding tourist traps and overpricing.",
+            h1: "Nerja & Frigiliana's Best Kept Secret",
+            p: "Access private villas, boat experiences, and hidden spots not found in guidebooks. We are your local host for a different, exclusive, and hassle-free journey.",
             cta: "Explore Experiences",
             cta2: "Our Services",
             localPrideShort: "100% Local Project: Born in Nerja, supporting the commerce of our area."
@@ -717,21 +856,19 @@ export const translations = {
             p: "We handle every detail so your only task is to enjoy paradise.",
             items: [
                 {
-                    title: "Luxury Villas & Suites",
-                    desc: "A curated selection of the most exclusive properties in Nerja and Frigiliana.",
+                    title: "Charming Villas & Suites",
+                    desc: "A curated selection of unique properties. Far from the noise, close to the essence.",
                     features: ["Private Staff", "Prime Locations", "Total Privacy"]
                 },
                 {
-                    title: "Renovations & Quotes",
-                    desc: "Click here if you are looking for a renovation quote for your home. We track the best value for money for you on the Costa del Sol.",
-                    features: ["Direct Management", "Local Providers", "Guaranteed Savings"],
-                    link: "/mantenimiento",
-                    btnText: "Get Quote"
+                    title: "Signature Experiences",
+                    desc: "From sailing in untouched areas to private chefs in your villa. We design moments you'll remember forever.",
+                    features: ["Exclusive Access", "Local Guides", "Fully Tailored"]
                 },
                 {
-                    title: "Property Management",
-                    desc: "Trusted management for owners seeking peace of mind and profitability.",
-                    features: ["VIP Maintenance", "360º Management", "Real-time Reports"]
+                    title: "Concierge 24/7",
+                    desc: "Your personal assistant at the destination. VIP reservations, transport, and any whim you may have.",
+                    features: ["Bilingual Support", "Fast Response", "Local Knowledge"]
                 }
             ]
         },
@@ -1097,88 +1234,88 @@ export const translations = {
             facebook: "nerja experience"
         },
         investors: {
-            nav: { investor: "Investors", home: "Home" },
+            nav: { investor: "Investors (Peace of Mind)", home: "Home" },
             hero: {
-                tag: "Investor Relations",
-                h1: "Investing in the Future of Leisure",
-                p: "CostaVisor is de-fragmenting the premium local services market in Costa del Sol through technology, transparency, and operational excellence.",
-                cta: "Contact Us"
+                tag: "Hassle-Free Investment",
+                h1: "Investing in Nerja should be <span class='text-secondary italic'>easy and profitable</span>",
+                p: "Forget about agencies that just want to sell you the house and disappear. We are your local partner: we help you buy, we renovate what's needed, and we manage the rental. All in one.",
+                cta: "Let's Talk Numbers"
             },
             whyUs: {
-                title: "Why CostaVisor as your ally?",
-                desc: "We are your right hand when buying your property. As locals, we know the area perfectly and our service is to help and accompany you throughout the entire process.",
+                title: "Why trust CostaVisor?",
+                desc: "Because we live here, we know every street, and we have the tools to care for your investment as if it were our own.",
                 items: [
                     {
-                        title: "Bespoke Property Finding",
-                        desc: "Ideally we help you find your dream home on the Costa del Sol. Just tell us your tastes (mountain, sea views, nº of rooms...) and we get to work. Your preferences are our command."
+                        title: "We Buy Well (Data-Driven)",
+                        desc: "We don't go by 'hunches'. We analyze which properties have real vacation rental potential so your money works for you from day one."
                     },
                     {
-                        title: "Complete Advice",
-                        desc: "We accompany you throughout the purchase process, offering expert advice and total transparency, with no fine print."
+                        title: "Renovations Without Surprises",
+                        desc: "With our construction company (JD Builders), we transform old properties into tourist gems. Fixed price and guaranteed date. No mess."
                     },
                     {
-                        title: "Renovations & Personalization",
-                        desc: "If your new home needs improvements, we help you by working with the best local companies in the industry."
+                        title: "Total Management (For Real)",
+                        desc: "Cleaning, check-in, maintenance... You don't have to lift a finger. You just receive the reports and income every month."
                     },
                     {
-                        title: "Investment Management",
-                        desc: "If your intention is to invest for holiday rentals, we help you manage it to maximize your profitability."
+                        title: "Your Local Partner",
+                        desc: "If there is a water leak or a paper to sign, we are there. You own a beach house, not a problem."
                     }
                 ],
-                footer: "It is always better to have a local from Nerja as your ally. We are building trust through transparency."
+                footer: "More than a real estate agency, we are your team on the ground in Nerja."
             },
             pillars: {
-                title: "Our Commitment to Transparency",
+                title: "Our Method: Total Peace of Mind",
                 items: [
                     {
-                        title: "Scalable Growth",
-                        desc: "Proprietary technology designed to scale across coastal regions worldwide, starting with Spain's strongest tourism hub.",
+                        title: "1. We Find",
+                        desc: "We look for that 'hidden gem' with potential that others don't see.",
                     },
                     {
-                        title: "Risk Management",
-                        desc: "Automated financial auditing and rigorous provider vetting ensure a secure ecosystem for both investors and clients.",
+                        title: "2. We Transform",
+                        desc: "We turn it into a 5-star accommodation (if needed).",
                     },
                     {
-                        title: "Operational Excellence",
-                        desc: "A 360º solution managed by localized experts, ensuring high retention and year-round revenue streams.",
+                        title: "3. We Monetize",
+                        desc: "We fill it with happy guests paying premium rates.",
                     }
                 ]
             },
             market: {
-                tag: "Market Potential",
-                h2: "Capturing the Costa del Sol Digital Boom",
-                p: "Where others see dispersion, we see the need to join forces. CostaVisor centralizes local excellence into a secure platform, offering investors and clients the guarantee of a transparent, organized, and high-quality digital ecosystem.",
+                tag: "The Time is Now",
+                h2: "Nerja is trending, but you need to know how to move",
+                p: "Tourism in the Costa del Sol keeps growing. But to make real money, you need to stand out. We make your property the one everyone wants to book.",
                 items: [
-                    "Direct and close connection with international residents.",
-                    "We handle everything: home care and personal attention 24/7.",
-                    "Clear accounts: total transparency in income and management.",
-                    "A real model that already works and builds trust in the area."
+                    "Direct and close treatment (we are people, not robots).",
+                    "We care for your house better than our own.",
+                    "Clear accounts: total transparency in expenses and income.",
+                    "Real experience: we already manage successful properties in the area."
                 ],
-                stat: "12M+",
-                statDesc: "Yearly Visitors"
+                stat: "Top",
+                statDesc: "Tourist Destination"
             },
             form: {
-                h2: "Become a Strategic Partner",
-                p: "Leave your details below and we will get in touch to explore how we can collaborate on your next investment.",
-                name: "Full Name",
-                email: "Email Address",
-                profile: "Professional Profile / Firm",
-                profilePlaceholder: "Venture Capital / Private Equity / Family Office",
-                cta: "Submit Inquiry"
+                h2: "Interested in investing without the hassle?",
+                p: "Leave us your details. No strings attached. Let's have a coffee (or a video call) and see how we can help you make money in Nerja.",
+                name: "Your Name",
+                email: "Your Email",
+                profile: "What are you looking for? (e.g., Buy, Renovate, Manage...)",
+                profilePlaceholder: "Looking to buy to rent...",
+                cta: "Contact the Team"
             }
         },
         blog: {
-            readMore: "Read more",
+            readMore: "Leer más",
             posts: [
                 {
                     slug: "frigiliana-nerja-secretos",
-                    title: "What to see in Frigiliana: 5 magical corners",
-                    excerpt: "Discover the best-kept secrets of the most beautiful village in Spain according to our local guide.",
+                    title: "Qué ver en Frigiliana y Nerja: Planes y Secretos",
+                    excerpt: "Desde el Balcón de Europa hasta el barrio morisco. Descubra rutas de tapas auténticas, los mejores atardeceres y rincones con encanto local que solo nosotros conocemos.",
                 },
                 {
                     slug: "calas-secretas-barco",
-                    title: "The best coves in Nerja accessible only by boat",
-                    excerpt: "We show you where to anchor to enjoy absolute tranquility this summer.",
+                    title: "Calas Secretas de Nerja: Experiencia en Barco",
+                    excerpt: "Navegue hacia Maro y Cantarriján para un día inolvidable lejos de las multitudes. Pregunte por nuestro servicio de catering a bordo para una experiencia perfecta de lujo y privacidad.",
                 }
             ]
         },

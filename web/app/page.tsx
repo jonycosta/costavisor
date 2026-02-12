@@ -34,7 +34,6 @@ export default function Home() {
         lang={lang}
         setLang={setLang}
         t={t.nav}
-        onBook={() => openModal(true)}
       />
       <Hero t={t.hero} />
       <TrackingSection t={t.tracking} />

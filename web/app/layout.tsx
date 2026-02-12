@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "./lib/LanguageContext";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
     template: "%s | CostaVisor"
   },
   description: "Tu aliado local en la Costa del Sol. Encuentra los mejores precios en villas, experiencias y servicios en Nerja, Frigiliana y Málaga. Lujo accesible y gestión integral.",
-  keywords: ["Nerja", "Frigiliana", "Costa del Sol", "Málaga", "Turismo", "Villas", "Alquiler Vacacional", "Experiencias", "Concierge", "Presupuestos"],
+  keywords: ["Nerja", "Frigiliana", "Costa del Sol", "Málaga", "Turismo", "Villas", "Alquiler Vacacional", "Experiencias", "Concierge"],
   alternates: {
-    canonical: "https://www.costavisor.com",
+    canonical: "./",
   },
   openGraph: {
     title: "CostaVisor | Expertos en Nerja, Frigiliana y Málaga",
@@ -112,6 +113,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <LanguageProvider>
           {children}
+          <WhatsAppButton />
         </LanguageProvider>
       </body>
     </html>
