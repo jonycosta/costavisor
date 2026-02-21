@@ -1,90 +1,137 @@
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
-import ClientOnly from "./ClientOnly";
+"use client";
 
-export default function Hero({ t }: { t: any }) {
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight, Star } from "lucide-react";
+import { useRef } from "react";
+
+interface HeroProps {
+    t: {
+        tag: string;
+        h1: string;
+        p: string;
+        cta: string;
+        cta2: string;
+        localPrideShort: string;
+    };
+}
+
+export default function Hero({ t }: HeroProps) {
+    const containerRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start start", "end start"],
+    });
+
+    const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+    const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
     return (
-        <section id="inicio" className="relative h-screen flex items-center pt-20 overflow-hidden bg-primary">
-            {/* Background Image / Pattern */}
-            <div className="absolute inset-0 z-0">
+        <section
+            ref={containerRef}
+            className="relative min-h-[100svh] flex items-center justify-center overflow-hidden bg-primary pt-24"
+        >
+            {/* Background with Parallax Effect */}
+            <motion.div style={{ y }} className="absolute inset-0 z-0">
                 <Image
                     src="/exp-nature.png"
-                    alt="Villas de lujo y experiencias exclusivas en Nerja y Frigiliana - Costa del Sol"
+                    alt="CostaVisor Experience"
                     fill
-                    className="object-cover opacity-60"
+                    className="object-cover opacity-50 scale-110"
                     priority
-                    quality={75}
-                    sizes="100vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-transparent to-transparent" />
-            </div>
+                {/* Layered Overlays for Depth */}
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-primary/90" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/60 via-transparent to-primary/60" />
+            </motion.div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="max-w-3xl space-y-8">
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+                <div className="max-w-4xl mx-auto text-center space-y-10">
+
+                    {/* Tagline Badge */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
+                    >
                         <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                        <span className="text-xs font-bold tracking-widest text-white uppercase">{t.tag}</span>
-                    </div>
+                        <span className="text-[10px] md:text-xs font-black tracking-[0.3em] text-white uppercase">
+                            {t.tag}
+                        </span>
+                    </motion.div>
 
-                    {/* Headline + Local Pride */}
-                    <div className="animate-in fade-in slide-in-from-bottom-6 duration-1000">
-                        <h1 className="font-outfit text-5xl md:text-8xl font-black text-white leading-[1.1]">
-                            {t.h1}
-                            <span className="block md:inline-block md:ml-8 mt-4 md:mt-0 align-middle">
-                                <span className="flex items-center gap-3 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white border-l border-white/30 pl-4 py-1">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
-                                    {t.localPrideShort}
+                    {/* Main Headline */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+                        className="space-y-4 md:space-y-6"
+                    >
+                        <h1 className="font-outfit text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.95] tracking-tighter drop-shadow-2xl">
+                            {t.h1.split(' ').map((word, i) => (
+                                <span key={i} className="inline-block mr-2 sm:mr-4">
+                                    {word}
                                 </span>
-                            </span>
+                            ))}
                         </h1>
-                    </div>
+                    </motion.div>
 
-                    {/* Description */}
-                    <p className="text-xl md:text-2xl text-white/80 max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
+                    {/* Description Paragraph */}
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="text-white/80 text-lg md:text-2xl font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-md"
+                    >
                         {t.p}
-                    </p>
+                    </motion.p>
 
                     {/* CTAs */}
-                    <div className="flex flex-col sm:flex-row items-center gap-6 pt-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
-                        <a href="#experiencias" className="w-full sm:w-auto px-10 py-5 bg-secondary hover:bg-secondary/90 text-white font-outfit font-bold text-lg rounded-2xl transition-all shadow-2xl shadow-secondary/20 active:scale-95 flex items-center justify-center gap-3">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.6 }}
+                        className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6"
+                    >
+                        <button className="btn-premium-primary w-full sm:w-auto">
                             {t.cta}
-                            <ArrowRight className="w-5 h-5" />
-                        </a>
-                        <a href="#servicios-locales" className="w-full sm:w-auto px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white font-outfit font-bold text-lg rounded-2xl transition-all flex items-center justify-center gap-3">
+                        </button>
+                        <button className="btn-premium-secondary w-full sm:w-auto">
                             {t.cta2}
-                        </a>
-                    </div>
+                        </button>
+                    </motion.div>
 
-                    {/* Social Proof / Stats */}
-                    <ClientOnly>
-                        <div className="flex items-center gap-8 pt-8 animate-in fade-in duration-1000 delay-500">
-                            <div className="flex -space-x-3">
-                                {[1, 2, 3, 4].map((i) => (
-                                    <div key={i} className="w-12 h-12 rounded-full border-2 border-primary bg-slate-200 overflow-hidden relative">
-                                        <img src={`https://i.pravatar.cc/150?u=${i}`} alt="Avatar" className="w-full h-full object-cover" />
-                                    </div>
-                                ))}
-                            </div>
-                            <div>
-                                <div className="flex items-center gap-1">
-                                    <span className="text-white font-black text-xl">+2k</span>
-                                    <span className="text-secondary font-bold text-sm">★★★★★</span>
+                    {/* Social Proof + Local Pride */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1 }}
+                        className="pt-12 flex flex-col items-center gap-4"
+                    >
+                        <div className="flex -space-x-3">
+                            {[1, 2, 3, 4].map((i) => (
+                                <div key={i} className="w-10 h-10 rounded-full border-2 border-primary overflow-hidden ring-4 ring-white/10">
+                                    <Image src={`/exp-villa.png`} alt="User" width={40} height={40} className="object-cover" />
                                 </div>
-                                <p className="text-white/60 text-xs font-bold uppercase tracking-widest">Experiencias inolvidables</p>
+                            ))}
+                            <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-primary text-xs font-bold ring-4 ring-white/10">
+                                +2k
                             </div>
                         </div>
-                    </ClientOnly>
+                        <div className="flex items-center gap-2 text-white/40 text-[10px] font-bold uppercase tracking-widest">
+                            <span className="flex text-secondary gap-0.5">
+                                {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 fill-current" />)}
+                            </span>
+                            <span>{t.localPrideShort}</span>
+                        </div>
+                    </motion.div>
+
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
-                <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-2">
-                    <div className="w-1 h-2 bg-white rounded-full" />
-                </div>
-            </div>
+            {/* Hero Accent: Glow */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120%] h-64 bg-secondary/10 blur-[120px] rounded-[100%] -mb-32 z-0" />
         </section>
     );
 }

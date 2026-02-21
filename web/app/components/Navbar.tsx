@@ -1,15 +1,22 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, ChevronRight, Globe, Languages } from "lucide-react";
+import { Menu, X, Globe, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface NavbarProps {
-    lang: "es" | "en";
-    setLang: (lang: "es" | "en") => void;
-    t: any;
+    lang: string;
+    setLang: (lang: string) => void;
+    t: {
+        home: string;
+        accommodations: string;
+        experiences: string;
+        packages: string;
+        services: string;
+        book: string;
+    };
 }
 
 export default function Navbar({ lang, setLang, t }: NavbarProps) {
@@ -17,133 +24,154 @@ export default function Navbar({ lang, setLang, t }: NavbarProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
-        };
+        const handleScroll = () => setScrolled(window.scrollY > 50);
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     const navLinks = [
-        { name: t.home, href: "/#inicio" },
-        { name: t.accommodations, href: "/alojamientos" },
-        { name: t.experiences, href: "/#experiencias" },
-        { name: t.packages, href: "/packs-vacaciones" },
-        { name: t.services, href: "#servicios" },
-        { name: lang === "es" ? "Servicios Locales" : "Local Services", href: "/#servicios-locales" },
-        { name: t.investors, href: "/investors" },
+        { name: t.home, href: "/" },
+        { name: t.experiences, href: "#experiencias" },
+        { name: t.packages, href: "#disenador" },
+        { name: t.accommodations, href: "#alojamientos" },
+        { name: t.services, href: "#grupos" },
     ];
 
     return (
-        <nav
-            className={cn(
-                "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-                scrolled
-                    ? "py-3 bg-white/90 backdrop-blur-md shadow-lg border-b border-primary/5"
-                    : "py-6 bg-transparent"
-            )}
-        >
-            <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-                {/* Logo */}
-                <Link href="/" className={cn("flex items-center gap-2 group")}>
-                    <span className={cn(
-                        "font-outfit font-bold text-2xl transition-colors duration-300",
-                        scrolled ? "text-primary" : "text-white drop-shadow-md"
-                    )}>
-                        <span className="text-secondary">Costa</span>Visor
-                    </span>
-                </Link>
+        <>
+            <nav
+                className={cn(
+                    "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+                    scrolled
+                        ? "py-4 bg-white/80 backdrop-blur-xl shadow-xl border-b border-primary/5"
+                        : "py-8 bg-transparent"
+                )}
+            >
+                <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+                    {/* Logo */}
+                    <Link href="/" className="flex items-center gap-2 group">
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            className={cn(
+                                "font-outfit font-black text-2xl md:text-3xl transition-colors duration-300",
+                                scrolled ? "text-primary" : "text-white"
+                            )}
+                        >
+                            Costa<span className="text-secondary">Visor</span>
+                        </motion.div>
+                    </Link>
 
-                {/* Desktop Menu */}
-                <div className="hidden lg:flex items-center gap-10">
-                    <div className="flex items-center gap-8">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
+                    {/* Desktop Menu */}
+                    <div className="hidden lg:flex items-center gap-12">
+                        <div className="flex items-center gap-10">
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className={cn(
+                                        "text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300 hover:text-secondary relative group",
+                                        scrolled ? "text-primary/80" : "text-white/90"
+                                    )}
+                                >
+                                    {link.name}
+                                    <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-secondary transition-all duration-500 group-hover:w-full" />
+                                </Link>
+                            ))}
+                        </div>
+
+                        <div className="flex items-center gap-6 pl-10 border-l border-white/20">
+                            <button
+                                onClick={() => setLang(lang === "es" ? "en" : "es")}
                                 className={cn(
-                                    "text-sm font-bold uppercase tracking-widest transition-all duration-300 hover:text-secondary relative group",
-                                    scrolled ? "text-primary/80" : "text-white drop-shadow-md"
+                                    "flex items-center gap-2 px-4 py-2 rounded-xl border transition-all text-[10px] font-bold uppercase tracking-widest",
+                                    scrolled
+                                        ? "bg-primary/5 border-primary/10 text-primary hover:bg-primary hover:text-white"
+                                        : "bg-white/10 border-white/20 text-white hover:bg-white hover:text-primary"
                                 )}
                             >
-                                {link.name}
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
+                                <Globe className="w-3.5 h-3.5" />
+                                {lang.toUpperCase()}
+                            </button>
+
+                            <Link
+                                href="#disenador"
+                                className={cn(
+                                    "px-8 py-3 rounded-xl font-black uppercase tracking-widest text-[10px] transition-all flex items-center gap-2",
+                                    scrolled
+                                        ? "bg-primary text-white hover:bg-secondary hover:shadow-lg shadow-secondary/20"
+                                        : "bg-secondary text-primary hover:bg-white hover:shadow-lg shadow-white/20"
+                                )}
+                            >
+                                {t.book}
+                                <ArrowRight className="w-4 h-4" />
                             </Link>
-                        ))}
+                        </div>
                     </div>
 
-                    <div className="flex items-center gap-6 pl-8 border-l border-primary/10">
+                    {/* Mobile Toggle */}
+                    <div className="lg:hidden flex items-center gap-4">
                         <button
                             onClick={() => setLang(lang === "es" ? "en" : "es")}
                             className={cn(
-                                "flex items-center gap-2 text-xs font-black uppercase tracking-widest transition-all hover:text-secondary",
-                                scrolled ? "text-primary/60" : "text-white/80"
+                                "p-3 rounded-xl transition-all",
+                                scrolled ? "text-primary bg-primary/5" : "text-white bg-white/10"
                             )}
                         >
-                            <Languages className="w-4 h-4" />
-                            {lang === "es" ? "EN" : "ES"}
+                            {lang.toUpperCase()}
                         </button>
-                        <Link
-                            href="/design"
+                        <button
                             className={cn(
-                                "px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest transition-all transform active:scale-95 shadow-md",
-                                scrolled
-                                    ? "bg-primary text-white hover:bg-primary-dark"
-                                    : "bg-white text-primary hover:bg-secondary hover:text-white"
+                                "p-3 rounded-xl transition-all",
+                                scrolled ? "text-primary bg-primary/5" : "text-white bg-white/10"
                             )}
+                            onClick={() => setIsOpen(!isOpen)}
                         >
-                            {t.book}
-                        </Link>
+                            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                        </button>
                     </div>
                 </div>
 
-                {/* Mobile Toggle */}
-                <div className="lg:hidden flex items-center gap-4">
-                    <button
-                        onClick={() => setLang(lang === "es" ? "en" : "es")}
-                        className={cn(
-                            "px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest border transition-all",
-                            scrolled
-                                ? "border-primary/20 text-primary"
-                                : "border-white/30 text-white"
-                        )}
-                    >
-                        {lang === "es" ? "EN" : "ES"}
-                    </button>
-                    <button
-                        className={cn("p-2 rounded-xl transition-colors", scrolled ? "text-primary" : "text-white")}
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
-                    </button>
-                </div>
-            </div>
-
-            {/* Mobile Menu */}
-            <div
-                className={cn(
-                    "lg:hidden absolute top-full left-0 right-0 bg-white border-b border-primary/10 transition-all duration-500 overflow-hidden shadow-2xl",
-                    isOpen ? "max-h-screen opacity-100 py-8" : "max-h-0 opacity-0 py-0"
-                )}
-            >
-                <div className="flex flex-col gap-6 px-10">
-                    <div className="flex flex-col gap-6 w-full">
-                        <Link onClick={() => setIsOpen(false)} href="/" className="text-3xl font-black text-primary hover:text-secondary transition-colors">{t.home}</Link>
-                        <Link onClick={() => setIsOpen(false)} href="/alojamientos" className="text-3xl font-black text-primary hover:text-secondary transition-colors">{t.accommodations}</Link>
-                        <Link onClick={() => setIsOpen(false)} href="/#experiencias" className="text-3xl font-black text-primary hover:text-secondary transition-colors">{t.experiences}</Link>
-                        <Link onClick={() => setIsOpen(false)} href="/packs-vacaciones" className="text-3xl font-black text-primary hover:text-secondary transition-colors">{t.packages}</Link>
-                        <Link onClick={() => setIsOpen(false)} href="/#servicios" className="text-3xl font-black text-primary hover:text-secondary transition-colors">{t.services}</Link>
-                        <Link onClick={() => setIsOpen(false)} href="/investors" className="text-3xl font-black text-primary hover:text-secondary transition-colors">{t.investors}</Link>
-                    </div>
-                    <Link
-                        href="/design"
-                        onClick={() => setIsOpen(false)}
-                        className="mt-4 px-8 py-4 bg-primary text-white text-center rounded-2xl font-bold uppercase tracking-widest shadow-xl shadow-primary/10 active:scale-95 transition-all"
-                    >
-                        {t.book}
-                    </Link>
-                </div>
-            </div>
-        </nav>
+                {/* Mobile Menu */}
+                <AnimatePresence>
+                    {isOpen && (
+                        <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            className="lg:hidden bg-white border-b border-primary/5 shadow-2xl overflow-hidden"
+                        >
+                            <div className="p-8 space-y-6">
+                                {navLinks.map((link) => (
+                                    <Link
+                                        key={link.name}
+                                        href={link.href}
+                                        onClick={() => setIsOpen(false)}
+                                        className="block text-lg font-black text-primary uppercase tracking-widest hover:text-secondary transition-colors"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ))}
+                                <div className="pt-6 border-t border-primary/5">
+                                    <Link
+                                        href="#disenador"
+                                        onClick={() => setIsOpen(false)}
+                                        className="w-full py-5 bg-primary text-white rounded-2xl flex items-center justify-center font-black uppercase tracking-widest text-sm"
+                                    >
+                                        {t.book}
+                                    </Link>
+                                </div>
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </nav>
+            {/* Overlay to close menu */}
+            {isOpen && (
+                <div
+                    className="fixed inset-0 z-40 bg-primary/20 backdrop-blur-sm lg:hidden"
+                    onClick={() => setIsOpen(false)}
+                />
+            )}
+        </>
     );
 }
