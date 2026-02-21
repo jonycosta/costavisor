@@ -92,7 +92,7 @@ export const translations = {
                 {
                     title: "Fútbol: La Rosaleda Experience",
                     category: "NUEVO",
-                    image: "/exp-football.jpg",
+                    image: "/exp-malaga.jpg",
                     slug: "malaga-cf-experience",
                     price: "Consultar",
                     duration: "Evento",
@@ -344,7 +344,7 @@ export const translations = {
                 {
                     title: "Football: The Rosaleda Experience",
                     category: "NEW",
-                    image: "/exp-football.jpg",
+                    image: "/exp-malaga.jpg",
                     slug: "malaga-cf-experience",
                     price: "Inquire",
                     duration: "Event",

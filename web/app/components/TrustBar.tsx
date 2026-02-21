@@ -12,7 +12,7 @@ export default function TrustBar({ t }: TrustBarProps) {
     return (
         <section className="py-12 bg-primary relative overflow-hidden">
             {/* Background Accent */}
-            <div className="absolute inset-0 bg-gradient-to-r from-secondary/5 to-transparent opaicty-50" />
+            <div className="absolute inset-0 bg-gradient-to-r from-secondary/5 to-transparent opacity-50" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
