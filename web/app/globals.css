@@ -44,40 +44,87 @@ h6 {
   font-family: var(--font-outfit), sans-serif;
 }
 
-@layer components {
-  .glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
+@utility glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-  .glass-dark {
-    background: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-  }
+@utility glass-dark {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
 
-  .section-padding {
-    @apply py-24 px-6 md:px-12 lg:px-24;
+@utility section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @media (min-width: 768px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
+  @media (min-width: 1024px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
 
-  .btn-premium {
-    @apply px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-[10px] md:text-xs transition-all duration-500 shadow-2xl;
+@utility btn-premium {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.625rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  @media (min-width: 768px) {
+    font-size: 0.75rem;
   }
+}
 
-  .btn-premium-primary {
-    @apply btn-premium bg-primary text-white hover:bg-secondary hover:shadow-secondary/20 hover:-translate-y-1 active:scale-95;
+@utility btn-premium-primary {
+  @apply btn-premium;
+  background-color: var(--primary);
+  color: white;
+  &:hover {
+    background-color: var(--secondary);
+    box-shadow: 0 20px 25px -5px rgba(0, 168, 204, 0.2);
+    transform: translateY(-0.25rem);
   }
+  &:active {
+    transform: scale(0.95);
+  }
+}
 
-  .btn-premium-secondary {
-    @apply btn-premium bg-white text-primary border border-border hover:border-secondary/30 hover:shadow-primary/5 hover:-translate-y-1 active:scale-95;
+@utility btn-premium-secondary {
+  @apply btn-premium;
+  background-color: white;
+  color: var(--primary);
+  border: 1px solid var(--border);
+  &:hover {
+    border-color: rgba(0, 168, 204, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(0, 51, 102, 0.05);
+    transform: translateY(-0.25rem);
   }
+  &:active {
+    transform: scale(0.95);
+  }
+}
 
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
-  }
+@utility text-gradient {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
 }
 
 /* Custom Scrollbar */

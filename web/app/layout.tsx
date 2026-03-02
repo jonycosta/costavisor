@@ -19,20 +19,20 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.costavisor.com"),
   title: {
-    default: "CostaVisor | Expertos Locales en Nerja, Frigiliana y Costa del Sol",
+    default: "CostaVisor | Villas de Lujo, Experiencias Auténticas en Nerja y Frigiliana",
     template: "%s | CostaVisor"
   },
-  description: "Tu aliado local en la Costa del Sol. Encuentra los mejores precios en villas, experiencias y servicios en Nerja, Frigiliana y Málaga. Lujo accesible y gestión integral.",
-  keywords: ["Nerja", "Frigiliana", "Costa del Sol", "Málaga", "Turismo", "Villas", "Alquiler Vacacional", "Experiencias", "Concierge"],
+  description: "Descubre Nerja y Frigiliana con CostaVisor. Villas de lujo, experiencias auténticas, turismo slow y gestión de propiedades con JD Builders. Tu experto local en la Costa del Sol.",
+  keywords: ["luxury villas Nerja", "holidays in Nerja", "tailor made holidays", "vacaciones con encanto", "turismo slow", "experiencias auténticas", "qué hacer en Nerja", "planes diferentes Costa del Sol", "alquiler vacacional Nerja", "villas en Frigiliana", "Nerja", "Frigiliana", "Costa del Sol", "Málaga", "Turismo", "Villas", "Alquiler Vacacional", "Experiencias", "Concierge", "JD Builders", "gestión de propiedades"],
   alternates: {
     canonical: "./",
   },
   openGraph: {
-    title: "CostaVisor | Expertos en Nerja, Frigiliana y Málaga",
-    description: "Descubre la Costa del Sol como un local. Villas, barcos y planes exclusivos en Nerja y Frigiliana al mejor precio.",
+    title: "CostaVisor | Luxury Villas, Authentic Experiences in Nerja & Frigiliana",
+    description: "Discover Nerja and Frigiliana with CostaVisor. Luxury villas, authentic experiences, slow tourism, and property management with JD Builders. Your local expert on the Costa del Sol.",
     url: "https://www.costavisor.com",
     siteName: "CostaVisor",
-    locale: "es_ES",
+    locale: "en_US",
     type: "website",
     images: [
       {
