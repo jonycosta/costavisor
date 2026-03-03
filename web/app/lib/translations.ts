@@ -5,7 +5,7 @@ export const translations = {
             accommodations: "Villas & Suites",
             experiences: "Experiencias",
             packages: "Packs Vacaciones",
-            services: "Transfers",
+            services: "Traslados Aeropuerto",
             book: "Diseñar mi Viaje"
         },
         hero: {
@@ -14,7 +14,22 @@ export const translations = {
             p: "Accede a villas privadas, experiencias exclusivas y rincones de Nerja y Frigiliana que no salen en las guías. Somos tu anfitrión local para un viaje diferente y sin complicaciones.",
             cta: "Explorar Experiencias",
             cta2: "Diseñar mi Viaje",
-            localPrideShort: "Proyecto 100% Local: Nacidos en Nerja, apoyando a nuestra zona."
+            localPrideShort: "Proyecto 100% Local: Nacidos en Nerja, apoyando a nuestra zona.",
+            jdBuilders: {
+                title: "JD Builders: Gestión Integral de Alojamientos",
+                description: "Expertos en la gestión, mantenimiento y reforma de propiedades. Maximizamos la rentabilidad de tu inversión con total tranquilidad.",
+                services: [
+                    { name: "Gestión de Propiedades", desc: "Optimización de alquileres y mantenimiento." },
+                    { name: "Reformas y Mantenimiento", desc: "Soluciones integrales para tu propiedad." },
+                    { name: "Asesoramiento Legal", desc: "Soporte completo para inversores." }
+                ],
+                cta: "Más Información JD Builders"
+            },
+            localNetwork: {
+                title: "Nuestra Red Local: Calidad y Confianza",
+                description: "Hemos seleccionado a los mejores profesionales de la zona para ofrecerte servicios de primera calidad, desde chefs privados hasta guías turísticos.",
+                cta: "Conoce a Nuestros Socios"
+            }
         },
         trustBar: {
             items: [
@@ -196,6 +211,7 @@ export const translations = {
             title: "Más opciones para tu Pack",
             p: "Complementa tu estancia con estas excursiones opcionales que organizamos para ti.",
             items: [
+                { title: "Traslados Aeropuerto", desc: "Recogida y entrega directa en su alojamiento con total comodidad." },
                 { title: "Excursión a Granada", desc: "Alhambra y Albaicín con transporte privado." },
                 { title: "Málaga Capital", desc: "Museo Picasso, Alcazaba y centro histórico." },
                 { title: "Ronda y Pueblos Blancos", desc: "El Puente Nuevo y la esencia de la serranía." },
@@ -405,7 +421,7 @@ export const translations = {
             accommodations: "Villas & Suites",
             experiences: "Experiences",
             packages: "Vacation Packs",
-            services: "Transfers",
+            services: "Airport Transfers",
             book: "Design My Trip"
         },
         hero: {
@@ -414,7 +430,22 @@ export const translations = {
             p: "Access private villas, exclusive experiences and hidden corners of Nerja and Frigiliana. We are your local host for a different, stress-free journey.",
             cta: "Explore Experiences",
             cta2: "Design My Trip",
-            localPrideShort: "100% Local Project: Born in Nerja, supporting our community."
+            localPrideShort: "Project 100% Local: Born in Nerja, supporting our area.",
+            jdBuilders: {
+                title: "JD Builders: Comprehensive Accommodation Management",
+                description: "Experts in property management, maintenance, and renovation. We maximize your investment's profitability with complete peace of mind.",
+                services: [
+                    { name: "Property Management", desc: "Rental optimization and maintenance." },
+                    { name: "Renovation and Maintenance", desc: "Comprehensive solutions for your property." },
+                    { name: "Legal Advice", desc: "Full support for investors." }
+                ],
+                cta: "More Info JD Builders"
+            },
+            localNetwork: {
+                title: "Our Local Network: Quality and Trust",
+                description: "We have selected the best professionals in the area to offer you top-quality services, from private chefs to tour guides.",
+                cta: "Meet Our Partners"
+            }
         },
         trustBar: {
             items: [
@@ -596,6 +627,7 @@ export const translations = {
             title: "More options for your Pack",
             p: "Complement your stay with these optional excursions that we organize for you.",
             items: [
+                { title: "Airport Transfers", desc: "Direct pickup and drop-off at your accommodation with total comfort." },
                 { title: "Granada Excursion", desc: "Alhambra and Albaicín with private transport." },
                 { title: "Malaga City Center", desc: "Picasso Museum, Alcazaba and historic center." },
                 { title: "Ronda & White Villages", desc: "The New Bridge and the essence of the mountains." },

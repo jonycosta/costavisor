@@ -13,6 +13,17 @@ interface HeroProps {
         cta: string;
         cta2: string;
         localPrideShort: string;
+        jdBuilders: {
+            title: string;
+            description: string;
+            services: Array<{ name: string; desc: string }>;
+            cta: string;
+        };
+        localNetwork: {
+            title: string;
+            description: string;
+            cta: string;
+        };
     };
 }
 
@@ -124,6 +135,29 @@ export default function Hero({ t }: HeroProps) {
                                 {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 fill-current" />)}
                             </span>
                             <span>{t.localPrideShort}</span>
+                        </div>
+
+                        {/* JD Builders Section */}
+                        <div className="mt-12 text-left">
+                            <h3 className="font-outfit text-2xl md:text-3xl font-black text-white mb-4">{t.jdBuilders.title}</h3>
+                            <p className="text-white/70 text-lg mb-6">{t.jdBuilders.description}</p>
+                            <ul className="list-disc list-inside text-white/70 text-lg mb-6">
+                                {t.jdBuilders.services.map((service: any, i: number) => (
+                                    <li key={i}><strong>{service.name}:</strong> {service.desc}</li>
+                                ))}
+                            </ul>
+                            <button className="btn-premium-secondary w-full sm:w-auto mt-4">
+                                {t.jdBuilders.cta}
+                            </button>
+                        </div>
+
+                        {/* Local Network Section */}
+                        <div className="mt-12 text-left">
+                            <h3 className="font-outfit text-2xl md:text-3xl font-black text-white mb-4">{t.localNetwork.title}</h3>
+                            <p className="text-white/70 text-lg mb-6">{t.localNetwork.description}</p>
+                            <button className="btn-premium-secondary w-full sm:w-auto mt-4">
+                                {t.localNetwork.cta}
+                            </button>
                         </div>
                     </motion.div>
 
