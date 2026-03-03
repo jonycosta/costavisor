@@ -158,6 +158,15 @@ export default function Hero({ t }: HeroProps) {
                             <button className="btn-premium-secondary w-full sm:w-auto mt-4">
                                 {t.localNetwork.cta}
                             </button>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+                                {t.localNetwork.partners.map((partner: any, i: number) => (
+                                    <div key={i} className="flex flex-col items-center text-center">
+                                        <Image src={partner.logo} alt={partner.name} width={80} height={80} className="mb-4 rounded-full" />
+                                        <h4 className="font-bold text-white mb-1">{partner.name}</h4>
+                                        <p className="text-white/70 text-sm">{partner.description}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
 

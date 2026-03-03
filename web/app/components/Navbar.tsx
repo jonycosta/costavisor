@@ -15,6 +15,7 @@ interface NavbarProps {
         experiences: string;
         packages: string;
         services: string;
+        localNetworkNav: string;
         book: string;
     };
 }
@@ -34,7 +35,8 @@ export default function Navbar({ lang, setLang, t }: NavbarProps) {
         { name: t.experiences, href: "#experiencias" },
         { name: t.packages, href: "#disenador" },
         { name: t.accommodations, href: "#alojamientos" },
-        { name: t.services, href: "#grupos" },
+        { name: t.services, href: "#servicios" },
+        { name: t.localNetworkNav, href: "#red-local" },
     ];
 
     return (

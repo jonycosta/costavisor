@@ -6,6 +6,7 @@ export const translations = {
             experiences: "Experiencias",
             packages: "Packs Vacaciones",
             services: "Traslados Aeropuerto",
+            localNetworkNav: "Red Local",
             book: "Diseñar mi Viaje"
         },
         hero: {
@@ -28,7 +29,11 @@ export const translations = {
             localNetwork: {
                 title: "Nuestra Red Local: Calidad y Confianza",
                 description: "Hemos seleccionado a los mejores profesionales de la zona para ofrecerte servicios de primera calidad, desde chefs privados hasta guías turísticos.",
-                cta: "Conoce a Nuestros Socios"
+                cta: "Conoce a Nuestros Socios",
+                partners: [
+                    { name: "Partner 1", description: "Descripción del Partner 1", logo: "/logos/partner1.png" },
+                    { name: "Partner 2", description: "Descripción del Partner 2", logo: "/logos/partner2.png" }
+                ]
             }
         },
         trustBar: {
@@ -422,6 +427,7 @@ export const translations = {
             experiences: "Experiences",
             packages: "Vacation Packs",
             services: "Airport Transfers",
+            localNetworkNav: "Local Network",
             book: "Design My Trip"
         },
         hero: {
@@ -444,7 +450,11 @@ export const translations = {
             localNetwork: {
                 title: "Our Local Network: Quality and Trust",
                 description: "We have selected the best professionals in the area to offer you top-quality services, from private chefs to tour guides.",
-                cta: "Meet Our Partners"
+                cta: "Meet Our Partners",
+                partners: [
+                    { name: "Partner 1", description: "Partner 1 Description", logo: "/logos/partner1.png" },
+                    { name: "Partner 2", description: "Partner 2 Description", logo: "/logos/partner2.png" }
+                ]
             }
         },
         trustBar: {
