@@ -28,11 +28,12 @@ export const translations = {
             },
             localNetwork: {
                 title: "Nuestra Red Local: Calidad y Confianza",
-                description: "Hemos seleccionado a los mejores profesionales de la zona para ofrecerte servicios de primera calidad, desde chefs privados hasta guías turísticos.",
+                description: "Nuestra Red Local no es una lista cualquiera. Es el resultado de años de confianza, amistad y colaboración con los artesanos, chefs, guías y emprendedores más auténticos de Nerja y Frigiliana. Cada colaborador ha sido seleccionado personalmente por su pasión, calidad y compromiso con la esencia local. Al elegir CostaVisor, no solo disfrutas de experiencias únicas, sino que apoyas directamente el comercio y el talento de nuestra comunidad.",
                 cta: "Conoce a Nuestros Socios",
                 partners: [
-                    { name: "Partner 1", description: "Descripción del Partner 1", logo: "/logos/partner1.png" },
-                    { name: "Partner 2", description: "Descripción del Partner 2", logo: "/logos/partner2.png" }
+                    { name: "Antonio el Pescador", description: "Capitán local con décadas de experiencia, conoce cada cala secreta y te llevará a los mejores rincones de la costa.", logo: "/logos/antonio-pescador.png" },
+                    { name: "La Huerta de María", description: "Productos frescos de temporada, cultivados con amor y tradición en la Axarquía. Sabor auténtico en tu mesa.", logo: "/logos/huerta-maria.png" },
+                    { name: "Artesanía de Frigiliana", description: "Talleres de cerámica y esparto donde la tradición cobra vida. Piezas únicas hechas a mano con el alma del pueblo.", logo: "/logos/artesania-frigiliana.png" }
                 ]
             }
         },
@@ -449,11 +450,12 @@ export const translations = {
             },
             localNetwork: {
                 title: "Our Local Network: Quality and Trust",
-                description: "We have selected the best professionals in the area to offer you top-quality services, from private chefs to tour guides.",
+                description: "Our Local Network is not just any list. It's the result of years of trust, friendship, and collaboration with the most authentic artisans, chefs, guides, and entrepreneurs in Nerja and Frigiliana. Each collaborator has been personally selected for their passion, quality, and commitment to the local essence. By choosing CostaVisor, you not only enjoy unique experiences but also directly support the commerce and talent of our community.",
                 cta: "Meet Our Partners",
                 partners: [
-                    { name: "Partner 1", description: "Partner 1 Description", logo: "/logos/partner1.png" },
-                    { name: "Partner 2", description: "Partner 2 Description", logo: "/logos/partner2.png" }
+                    { name: "Antonio the Fisherman", description: "Local captain with decades of experience, knows every secret cove and will take you to the best spots on the coast.", logo: "/logos/antonio-pescador.png" },
+                    { name: "Maria's Garden", description: "Fresh seasonal products, grown with love and tradition in Axarquía. Authentic flavor on your table.", logo: "/logos/huerta-maria.png" },
+                    { name: "Frigiliana Crafts", description: "Ceramic and esparto workshops where tradition comes alive. Unique handmade pieces with the soul of the village.", logo: "/logos/artesania-frigiliana.png" }
                 ]
             }
         },
