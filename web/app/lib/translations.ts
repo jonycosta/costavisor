@@ -18,11 +18,11 @@ export const translations = {
             localPrideShort: "Proyecto 100% Local: Nacidos en Nerja, apoyando a nuestra zona.",
             jdBuilders: {
                 title: "JD Builders: Gestión Integral de Alojamientos",
-                description: "Expertos en la gestión, mantenimiento y reforma de propiedades. Maximizamos la rentabilidad de tu inversión con total tranquilidad.",
+                description: "Tranquilidad Total: Nos encargamos de todo para que tú no tengas que preocuparte por nada.",
                 services: [
-                    { name: "Gestión de Propiedades", desc: "Optimización de alquileres y mantenimiento." },
+                    { name: "Gestión Integral", desc: "Desde la optimización de alquileres hasta el mantenimiento preventivo." },
                     { name: "Reformas y Mantenimiento", desc: "Soluciones integrales para tu propiedad." },
-                    { name: "Asesoramiento Legal", desc: "Soporte completo para inversores." }
+                    { name: "Asesoramiento Legal", desc: "Apoyo experto cuando lo necesites." }
                 ],
                 cta: "Más Información JD Builders"
             },
@@ -440,11 +440,11 @@ export const translations = {
             localPrideShort: "Project 100% Local: Born in Nerja, supporting our area.",
             jdBuilders: {
                 title: "JD Builders: Comprehensive Accommodation Management",
-                description: "Experts in property management, maintenance, and renovation. We maximize your investment's profitability with complete peace of mind.",
+                description: "Total Peace of Mind: We take care of everything so you don't have to worry about a thing.",
                 services: [
-                    { name: "Property Management", desc: "Rental optimization and maintenance." },
+                    { name: "Comprehensive Management", desc: "From rental optimization to preventive maintenance." },
                     { name: "Renovation and Maintenance", desc: "Comprehensive solutions for your property." },
-                    { name: "Legal Advice", desc: "Full support for investors." }
+                    { name: "Legal Advice", desc: "Expert support when you need it." }
                 ],
                 cta: "More Info JD Builders"
             },
