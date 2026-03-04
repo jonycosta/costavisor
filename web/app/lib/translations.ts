@@ -11,7 +11,7 @@ export const translations = {
         },
         hero: {
             tag: "Nerja & Frigiliana | Luxury Services",
-            h1: "El Secreto Mejor Guardado de la Costa del Sol",
+            h1: "El Secreto Mejor Guardado de la Costa del Sol ahora es tuyo",
             p: "Accede a villas privadas, experiencias exclusivas y rincones de Nerja y Frigiliana que no salen en las guías. Somos tu anfitrión local para un viaje diferente y sin complicaciones.",
             cta: "Explorar Experiencias",
             cta2: "Diseñar mi Viaje",
@@ -433,7 +433,7 @@ export const translations = {
         },
         hero: {
             tag: "Nerja & Frigiliana | Luxury Services",
-            h1: "The Costa del Sol's Best Kept Secret",
+            h1: "The Costa del Sol's Best Kept Secret is now yours",
             p: "Access private villas, exclusive experiences and hidden corners of Nerja and Frigiliana. We are your local host for a different, stress-free journey.",
             cta: "Explore Experiences",
             cta2: "Design My Trip",
