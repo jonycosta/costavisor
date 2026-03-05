@@ -24,11 +24,11 @@ export const translations = {
                     { name: "Reformas y Mantenimiento", desc: "Soluciones integrales para tu propiedad." },
                     { name: "Asesoramiento Legal", desc: "Apoyo experto cuando lo necesites." }
                 ],
-                cta: "Más Información JD Builders"
+                cta: "https://jdelitebuilders.company"
             },
             localNetwork: {
                 title: "Nuestra Red Local: Calidad y Confianza",
-                description: "Nuestra Red Local no es una lista cualquiera. Es el resultado de años de confianza, amistad y colaboración con los artesanos, chefs, guías y emprendedores más auténticos de Nerja y Frigiliana. Cada colaborador ha sido seleccionado personalmente por su pasión, calidad y compromiso con la esencia local. Al elegir CostaVisor, no solo disfrutas de experiencias únicas, sino que apoyas directamente el comercio y el talento de nuestra comunidad.",
+                description: "Nuestra red no nació en internet. Nació viviendo aquí. Son personas que forman parte de nuestro día a día en Nerja y Frigiliana. Profesionales que conocemos por su nombre, por su forma de trabajar y por su compromiso. Cuando confías en nosotros, confías también en ellos. Y esa confianza no se improvisa: se construye con el tiempo.",
                 cta: "Conoce a Nuestros Socios",
                 partners: [
                     { name: "Antonio el Pescador", description: "Capitán local con décadas de experiencia, conoce cada cala secreta y te llevará a los mejores rincones de la costa.", logo: "/logos/antonio-pescador.png" },
@@ -446,11 +446,11 @@ export const translations = {
                     { name: "Renovation and Maintenance", desc: "Comprehensive solutions for your property." },
                     { name: "Legal Advice", desc: "Expert support when you need it." }
                 ],
-                cta: "More Info JD Builders"
+                cta: "https://jdelitebuilders.company"
             },
             localNetwork: {
                 title: "Our Local Network: Quality and Trust",
-                description: "Our Local Network is not just any list. It's the result of years of trust, friendship, and collaboration with the most authentic artisans, chefs, guides, and entrepreneurs in Nerja and Frigiliana. Each collaborator has been personally selected for their passion, quality, and commitment to the local essence. By choosing CostaVisor, you not only enjoy unique experiences but also directly support the commerce and talent of our community.",
+                description: "Our network wasn't born on the internet. It was born living here. These are people who are part of our daily lives in Nerja and Frigiliana. Professionals we know by name, by their way of working, and by their commitment. When you trust us, you also trust them. And that trust isn't improvised: it's built over time.",
                 cta: "Meet Our Partners",
                 partners: [
                     { name: "Antonio the Fisherman", description: "Local captain with decades of experience, knows every secret cove and will take you to the best spots on the coast.", logo: "/logos/antonio-pescador.png" },

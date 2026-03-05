@@ -146,18 +146,18 @@ export default function Hero({ t }: HeroProps) {
                                     <li key={i}><strong>{service.name}:</strong> {service.desc}</li>
                                 ))}
                             </ul>
-                            <button className="btn-premium-secondary w-full sm:w-auto mt-4">
-                                {t.jdBuilders.cta}
-                            </button>
+                            <a href={t.jdBuilders.cta} target="_blank" rel="noopener noreferrer" className="btn-premium-secondary w-full sm:w-auto mt-4">
+                                Más Información JD Builders
+                            </a>
                         </div>
 
                         {/* Local Network Section */}
-                        <div className="mt-12 text-left">
+                        <div id="red-local" className="mt-12 text-left">
                             <h3 className="font-outfit text-2xl md:text-3xl font-black text-white mb-4">{t.localNetwork.title}</h3>
                             <p className="text-white/70 text-lg mb-6">{t.localNetwork.description}</p>
-                            <button className="btn-premium-secondary w-full sm:w-auto mt-4">
+                            <a href="#red-local" className="btn-premium-secondary w-full sm:w-auto mt-4">
                                 {t.localNetwork.cta}
-                            </button>
+                            </a>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-12">
                                 {t.localNetwork.partners.map((partner: any, i: number) => (
                                     <div key={i} className="flex flex-col items-center text-center">
