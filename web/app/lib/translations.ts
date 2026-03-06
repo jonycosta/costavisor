@@ -29,11 +29,12 @@ export const translations = {
             localNetwork: {
                 title: "Nuestra Red Local: Calidad y Confianza",
                 description: "Nuestra red no nació en internet. Nació viviendo aquí. Son personas que forman parte de nuestro día a día en Nerja y Frigiliana. Profesionales que conocemos por su nombre, por su forma de trabajar y por su compromiso. Cuando confías en nosotros, confías también en ellos. Y esa confianza no se improvisa: se construye con el tiempo.",
-                cta: "Conoce a Nuestros Socios",
+                cta: "mailto:grupocostavisor@gmail.com?subject=Interés en la Red Local de CostaVisor",
+                contactText: "Contacta con nosotros para más información",
                 partners: [
-                    { name: "Antonio el Pescador", description: "Capitán local con décadas de experiencia, conoce cada cala secreta y te llevará a los mejores rincones de la costa.", logo: "/logos/antonio-pescador.png" },
-                    { name: "La Huerta de María", description: "Productos frescos de temporada, cultivados con amor y tradición en la Axarquía. Sabor auténtico en tu mesa.", logo: "/logos/huerta-maria.png" },
-                    { name: "Artesanía de Frigiliana", description: "Talleres de cerámica y esparto donde la tradición cobra vida. Piezas únicas hechas a mano con el alma del pueblo.", logo: "/logos/artesania-frigiliana.png" }
+                    { name: "Antonio el Pescador", description: "Capitán local con décadas de experiencia, conoce cada cala secreta y te llevará a los mejores rincones de la costa.", logo: "/logos/antonio-pescador.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Antonio el Pescador" },
+                    { name: "La Huerta de María", description: "Productos frescos de temporada, cultivados con amor y tradición en la Axarquía. Sabor auténtico en tu mesa.", logo: "/logos/huerta-maria.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en La Huerta de María" },
+                    { name: "Artesanía de Frigiliana", description: "Talleres de cerámica y esparto donde la tradición cobra vida. Piezas únicas hechas a mano con el alma del pueblo.", logo: "/logos/artesania-frigiliana.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Artesanía de Frigiliana" }
                 ]
             }
         },
@@ -451,11 +452,12 @@ export const translations = {
             localNetwork: {
                 title: "Our Local Network: Quality and Trust",
                 description: "Our network wasn't born on the internet. It was born living here. These are people who are part of our daily lives in Nerja and Frigiliana. Professionals we know by name, by their way of working, and by their commitment. When you trust us, you also trust them. And that trust isn't improvised: it's built over time.",
-                cta: "Meet Our Partners",
+                cta: "mailto:grupocostavisor@gmail.com?subject=Interest in CostaVisor Local Network",
+                contactText: "Contact us for more information",
                 partners: [
-                    { name: "Antonio the Fisherman", description: "Local captain with decades of experience, knows every secret cove and will take you to the best spots on the coast.", logo: "/logos/antonio-pescador.png" },
-                    { name: "Maria's Garden", description: "Fresh seasonal products, grown with love and tradition in Axarquía. Authentic flavor on your table.", logo: "/logos/huerta-maria.png" },
-                    { name: "Frigiliana Crafts", description: "Ceramic and esparto workshops where tradition comes alive. Unique handmade pieces with the soul of the village.", logo: "/logos/artesania-frigiliana.png" }
+                    { name: "Antonio the Fisherman", description: "Local captain with decades of experience, knows every secret cove and will take you to the best spots on the coast.", logo: "/logos/antonio-pescador.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Antonio the Fisherman" },
+                    { name: "Maria's Garden", description: "Fresh seasonal products, grown with love and tradition in Axarquía. Authentic flavor on your table.", logo: "/logos/huerta-maria.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Maria's Garden" },
+                    { name: "Frigiliana Crafts", description: "Ceramic and esparto workshops where tradition comes alive. Unique handmade pieces with the soul of the village.", logo: "/logos/artesania-frigiliana.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Frigiliana Crafts" }
                 ]
             }
         },

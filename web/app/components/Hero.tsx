@@ -105,12 +105,12 @@ export default function Hero({ t }: HeroProps) {
                         transition={{ duration: 0.8, delay: 0.6 }}
                         className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6"
                     >
-                        <button className="btn-premium-primary w-full sm:w-auto">
+                        <a href="mailto:grupocostavisor@gmail.com?subject=Interés en Explorar Experiencias" className="btn-premium-primary w-full sm:w-auto">
                             {t.cta}
-                        </button>
-                        <button className="btn-premium-secondary w-full sm:w-auto">
+                        </a>
+                        <a href="mailto:grupocostavisor@gmail.com?subject=Interés en Diseñar mi Viaje" className="btn-premium-secondary w-full sm:w-auto">
                             {t.cta2}
-                        </button>
+                        </a>
                     </motion.div>
 
                     {/* Social Proof + Local Pride */}
@@ -155,15 +155,17 @@ export default function Hero({ t }: HeroProps) {
                         <div id="red-local" className="mt-12 text-left">
                             <h3 className="font-outfit text-2xl md:text-3xl font-black text-white mb-4">{t.localNetwork.title}</h3>
                             <p className="text-white/70 text-lg mb-6">{t.localNetwork.description}</p>
-                            <a href="#red-local" className="btn-premium-secondary w-full sm:w-auto mt-4">
-                                {t.localNetwork.cta}
+                               <a href={t.localNetwork.cta} target="_blank" rel="noopener noreferrer" className="btn-premium-secondary w-full sm:w-auto mt-4">
+                                {t.localNetwork.contactText}
                             </a>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-12">
                                 {t.localNetwork.partners.map((partner: any, i: number) => (
                                     <div key={i} className="flex flex-col items-center text-center">
-                                        <Image src={partner.logo} alt={partner.name} width={80} height={80} className="mb-4 rounded-full" />
-                                        <h4 className="font-bold text-white mb-1">{partner.name}</h4>
-                                        <p className="text-white/70 text-sm">{partner.description}</p>
+                                        <a href={partner.contact} className="block" target="_blank" rel="noopener noreferrer">
+                                            <Image src={partner.logo} alt={partner.name} width={80} height={80} className="mb-4 rounded-full" />
+                                            <h4 className="font-bold text-white mb-1">{partner.name}</h4>
+                                            <p className="text-white/70 text-sm">{partner.description}</p>
+                                        </a>
                                     </div>
                                 ))}
                             </div>
