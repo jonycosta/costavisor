@@ -34,7 +34,8 @@ export const translations = {
                 partners: [
                     { name: "Antonio el Pescador", description: "Capitán local con décadas de experiencia, conoce cada cala secreta y te llevará a los mejores rincones de la costa.", logo: "/logos/antonio-pescador.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Antonio el Pescador" },
                     { name: "La Huerta de María", description: "Productos frescos de temporada, cultivados con amor y tradición en la Axarquía. Sabor auténtico en tu mesa.", logo: "/logos/huerta-maria.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en La Huerta de María" },
-                    { name: "Artesanía de Frigiliana", description: "Talleres de cerámica y esparto donde la tradición cobra vida. Piezas únicas hechas a mano con el alma del pueblo.", logo: "/logos/artesania-frigiliana.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Artesanía de Frigiliana" }
+                    { name: "Artesanía de Frigiliana", description: "Talleres de cerámica y esparto donde la tradición cobra vida. Piezas únicas hechas a mano con el alma del pueblo.", logo: "/logos/artesania-frigiliana.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Artesanía de Frigiliana" },
+                    { name: "Fly Costa del Sol", description: "Pilotos con más de 20 años de experiencia para un vuelo en parapente seguro y emocionante sobre la costa.", logo: "/logos/fly-costa-del-sol.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Fly Costa del Sol" }
                 ]
             }
         },
@@ -457,7 +458,8 @@ export const translations = {
                 partners: [
                     { name: "Antonio the Fisherman", description: "Local captain with decades of experience, knows every secret cove and will take you to the best spots on the coast.", logo: "/logos/antonio-pescador.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Antonio the Fisherman" },
                     { name: "Maria's Garden", description: "Fresh seasonal products, grown with love and tradition in Axarquía. Authentic flavor on your table.", logo: "/logos/huerta-maria.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Maria's Garden" },
-                    { name: "Frigiliana Crafts", description: "Ceramic and esparto workshops where tradition comes alive. Unique handmade pieces with the soul of the village.", logo: "/logos/artesania-frigiliana.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Frigiliana Crafts" }
+                    { name: "Frigiliana Crafts", description: "Ceramic and esparto workshops where tradition comes alive. Unique handmade pieces with the soul of the village.", logo: "/logos/artesania-frigiliana.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Frigiliana Crafts" },
+                    { name: "Fly Costa del Sol", description: "Pilots with over 20 years of experience for a safe and exciting paragliding flight over the coast.", logo: "/logos/fly-costa-del-sol.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interest in Fly Costa del Sol" }
                 ]
             }
         },
