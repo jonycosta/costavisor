@@ -28,14 +28,15 @@ export const translations = {
             },
             localNetwork: {
                 title: "Nuestra Red Local: Calidad y Confianza",
-                description: "Nuestra red no nació en internet. Nació viviendo aquí. Son personas que forman parte de nuestro día a día en Nerja y Frigiliana. Profesionales que conocemos por su nombre, por su forma de trabajar y por su compromiso. Cuando confías en nosotros, confías también en ellos. Y esa confianza no se improvisa: se construye con el tiempo.",
+                description: "Colaboramos con profesionales locales cuidadosamente seleccionados para crear experiencias auténticas. Todo lo que ves en nuestra web está seleccionado y gestionado por nosotros: profesionales locales, actividades y atención cercana, para que disfrutes sin preocuparte de nada.",
                 cta: "mailto:grupocostavisor@gmail.com?subject=Interés en la Red Local de CostaVisor",
                 contactText: "Contacta con nosotros para más información",
                 partners: [
                     { name: "Antonio el Pescador", description: "Capitán local con décadas de experiencia, conoce cada cala secreta y te llevará a los mejores rincones de la costa.", logo: "/logos/antonio-pescador.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Antonio el Pescador" },
                     { name: "La Huerta de María", description: "Productos frescos de temporada, cultivados con amor y tradición en la Axarquía. Sabor auténtico en tu mesa.", logo: "/logos/huerta-maria.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en La Huerta de María" },
                     { name: "Artesanía de Frigiliana", description: "Talleres de cerámica y esparto donde la tradición cobra vida. Piezas únicas hechas a mano con el alma del pueblo.", logo: "/logos/artesania-frigiliana.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Artesanía de Frigiliana" },
-                    { name: "Fly Costa del Sol", description: "Pilotos con más de 20 años de experiencia para un vuelo en parapente seguro y emocionante sobre la costa.", logo: "/logos/fly-costa-del-sol.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Fly Costa del Sol" }
+                    { name: "Fly Costa del Sol", description: "Pilotos con más de 20 años de experiencia para un vuelo en parapente seguro y emocionante sobre la costa.", logo: "/logos/fly-costa-del-sol.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en Fly Costa del Sol" },
+					{ name: "GatyGo Rent", description: "Es un proyecto local dedicado al alquiler de scooters y vehículos para descubrir Nerja. En CostaVisor utilizamos sus scooters y vehículos bien cuidados como parte de algunas de nuestras rutas guiadas. Las rutas y experiencias que incluyen estos vehículos se organizan y reservan siempre a través de CostaVisor, integrando el alquiler y el servicio de guía en una experiencia completa.", logo: "/logos/gatygo-rent.png", contact: "mailto:grupocostavisor@gmail.com?subject=Interés en GatyGo Rent", catalogLink: "/experience#buggy-route" }
                 ]
             }
         },

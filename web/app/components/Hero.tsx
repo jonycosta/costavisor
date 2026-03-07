@@ -23,6 +23,8 @@ interface HeroProps {
             title: string;
             description: string;
             cta: string;
+            contactText: string;
+            partners: Array<{ name: string; description: string; logo: string; contact: string; catalogLink?: string }>;
         };
     };
 }
@@ -166,6 +168,12 @@ export default function Hero({ t }: HeroProps) {
                                             <h4 className="font-bold text-white mb-1">{partner.name}</h4>
                                             <p className="text-white/70 text-sm">{partner.description}</p>
                                         </a>
+                                        {partner.catalogLink && (
+                                            <a href={partner.catalogLink} className="btn-premium-tertiary mt-2 text-xs px-3 py-1" target="_blank" rel="noopener noreferrer">
+                                                Ver Catálogo de Experiencias
+                                            </a>
+                                        )}
+
                                     </div>
                                 ))}
                             </div>
